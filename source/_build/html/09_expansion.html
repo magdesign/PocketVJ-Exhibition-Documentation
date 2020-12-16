@@ -1,0 +1,246 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>EXPANSION &mdash; PocketVJ Exhibition 4.x documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> PocketVJ Exhibition
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="01_first_steps.html">First Steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_controlpanel.html">CONTROL PANEL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="03_autostart.html">AUTOSTART</a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_filemanagement.html">FILE MANAGEMENT</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_presenter.html">PRESENTER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_video.html">VIDEO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PocketVJ Exhibition</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+      <li>EXPANSION</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/09_expansion.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="expansion">
+<h1>EXPANSION<a class="headerlink" href="#expansion" title="Permalink to this headline">¶</a></h1>
+<p>This section holds all functions for the expansion board:</p>
+<img alt="_images/09_CP_expansion.png" src="_images/09_CP_expansion.png" />
+<div class="section" id="pir-sensor">
+<h2>PIR SENSOR<a class="headerlink" href="#pir-sensor" title="Permalink to this headline">¶</a></h2>
+<p>With the PIR Sensor attached, you can create an interactive installation which triggers a random video as soon as the sensor detects motion.</p>
+<ul class="simple">
+<li><p>This works with <a href="#id1"><span class="problematic" id="id2">*</span></a>.mp4 videos and/or <a href="#id3"><span class="problematic" id="id4">*</span></a>.mp3 audios.</p></li>
+<li><p>Copy the loop (default, standby) video to the media/internal/pir/loop folder</p></li>
+<li><p>Copy the trigger videos (can by any amount) to the media/internal/pir/trigger folder.</p></li>
+</ul>
+<p>see video tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor">https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor</a></p>
+</div>
+<div class="section" id="connect-pir">
+<h2>CONNECT PIR<a class="headerlink" href="#connect-pir" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/09_pir_connect.png" src="_images/09_pir_connect.png" />
+</div>
+<div class="section" id="buttons">
+<h2>BUTTONS<a class="headerlink" href="#buttons" title="Permalink to this headline">¶</a></h2>
+<p>see video tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/8/pocketvj-exhibition-button-connecting">https://video.pocketvj.com/AVideo/video/8/pocketvj-exhibition-button-connecting</a></p>
+</div>
+<div class="section" id="connect-buttons">
+<h2>CONNECT BUTTONS<a class="headerlink" href="#connect-buttons" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/09_button_connect.png" src="_images/09_button_connect.png" />
+</div>
+<div class="section" id="sensors">
+<h2>SENSORS<a class="headerlink" href="#sensors" title="Permalink to this headline">¶</a></h2>
+<p><strong>Temperature</strong> =&gt; see temperature/humidity from temperature sensor</p>
+</div>
+<div class="section" id="schematics">
+<h2>SCHEMATICS<a class="headerlink" href="#schematics" title="Permalink to this headline">¶</a></h2>
+<p>Attach a DHT11 Temperature/Humidity Sensor as shown in the diagram.</p>
+<ul class="simple">
+<li><p><strong>+5V</strong> goes to PIN13</p></li>
+<li><p><strong>GND</strong> goes to PIN1</p></li>
+<li><p><strong>S</strong> Signal goes to PIN5</p></li>
+</ul>
+<img alt="_images/09_temperature_connect.png" src="_images/09_temperature_connect.png" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2021, M.A.Gasser, https://pocketvj.com
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
