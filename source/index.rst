@@ -1,5 +1,5 @@
-PocketVJ RTC User Manual
-============
+PocketVJ Exhibition User Manual
+===============================
 
 
 .. image:: _images/00_PocketVJ_Exhibition.jpg
@@ -8,6 +8,7 @@ PocketVJ RTC User Manual
 Version 01/2020
 
 This user manual is published by MAG Design without any warranty.
+
 Improvements and changes to this manual necessitated by typographical errors,
 inaccuracies of current information, or improvements to
 programs and hardware, may be made by MAG Design at any time and without notice.
@@ -15,12 +16,14 @@ Such changes will, however, be incorporated into new editions of this User guide
 
 
 Under the copyright laws, this manual may not be copied in whole or in part 
-without the written consent of the owner. No worries, just ask me politely :-)
+without the written consent of the owner.
+
+No worries, just ask me politely :-)
 
 Content
 ========
 
-Thank you for buying a PocketVJ, you are fantastic!
+**Thank you for buying a PocketVJ, you are fantastic!**
 
 
 
