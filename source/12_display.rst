@@ -57,3 +57,5 @@ PROJECTOR
 
 
 see video tutorial: https://video.pocketvj.com/AVideo/video/25/pocketvj-pjlink-a-projector
+
+and if it does not work without a pjlink password: https://video.pocketvj.com/AVideo/video/31/pocketvj_pjlink_with_password

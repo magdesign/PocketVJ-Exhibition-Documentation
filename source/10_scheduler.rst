@@ -53,8 +53,26 @@ COMMANDS
 
 
 
- 
-
-
-
 .. image:: _images/10_scheduler_shema.png
+
+
+COUNTDOWN
+**********
+
+.. image:: _images/10_CP_scheduler_countdown.png
+
+
+**60** => Enter the time in Seconds 
+
+and click:
+
+
+**set Time** => Set time
+
+**Start** => Starts the countdown, when finished it will trigger all videos as Master
+
+**Stop** => Stops the countdown
+
+
+.. note::
+    Countdown was introduced with image 4.0.7, older systems need ``python3-pygame`` to be installed!

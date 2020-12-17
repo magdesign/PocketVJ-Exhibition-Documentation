@@ -22,8 +22,7 @@ Videotutorial: https://video.pocketvj.com/AVideo/video/2/pocketvj-exhibition-ove
 
 
 
-Note:
-::
+.. note::
     - Alternatively you can connect your PocketVJ via wired network.
     - Make sure your router is configured to 192.168.2.1. Access via address: http://192.168.2.*** 
     - If you lost the sticker with the IP address, go to "Network Settings" and click ‘Display IP’.

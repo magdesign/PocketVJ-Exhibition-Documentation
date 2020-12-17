@@ -102,6 +102,7 @@
 <li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
 <li class="toctree-l1"><a class="reference internal" href="09_expansion.html">EXPANSION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
 <li class="toctree-l1"><a class="reference internal" href="11_dmxoscmidi.html">DMX OSC MIDI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
 <li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
@@ -111,6 +112,7 @@
 <li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
 </ul>
 
             
@@ -258,29 +260,23 @@
 <div class="section" id="loading-from-usb-to-internal">
 <h2>LOADING FROM USB TO INTERNAL<a class="headerlink" href="#loading-from-usb-to-internal" title="Permalink to this headline">¶</a></h2>
 <p>Supported file systems are: vFAT, FAT32, exFAT, HFS, NTFS, EXT4</p>
-<blockquote>
-<div><p><a class="reference external" href="https://video.pocketvj.com/AVideo/video/19/pocketvj_usb_connecting">https://video.pocketvj.com/AVideo/video/19/pocketvj_usb_connecting</a></p>
-</div></blockquote>
+<p>See tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/19/pocketvj_usb_connecting">https://video.pocketvj.com/AVideo/video/19/pocketvj_usb_connecting</a></p>
 </div>
 <div class="section" id="samba">
 <h2>SAMBA<a class="headerlink" href="#samba" title="Permalink to this headline">¶</a></h2>
+<p>See tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/32/pocketvj_samba_share">https://video.pocketvj.com/AVideo/video/32/pocketvj_samba_share</a></p>
 <img alt="_images/04_samba.png" src="_images/04_samba.png" />
 <ol class="arabic simple">
 <li><p>In Finder go to: GO &gt; Connect to Server</p></li>
-</ol>
-<p>2. In the Server address bar type : <a class="reference external" href="smb://2.0.0.***">smb://2.0.0.***</a> (replace the <a href="#id1"><span class="problematic" id="id2">**</span></a>*
-with the number of your PocketVJ WiFi name).</p>
-<ol class="arabic simple" start="3">
-<li><p>Connect, in the Password Prompt select Guest.</p></li>
-</ol>
-<ol class="arabic simple" start="7">
-<li><p>Your Finder mounts a Network device named: media
-Load and edit your files with finder.</p></li>
+<li><p>In the Server address bar type : <code class="docutils literal notranslate"><span class="pre">smb://2.0.0.***</span></code></p></li>
+<li><p>Connect, in the password prompt select <code class="docutils literal notranslate"><span class="pre">Guest</span></code>.</p></li>
+<li><p>Your Finder mounts a Network device named: <code class="docutils literal notranslate"><span class="pre">media</span></code></p></li>
+<li><p>Load and edit your files directly with finder</p></li>
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you move large files, finder may tell you: copy zero bytes of…. Estimating time remaining… and it looks like finder hangs showing turning colorball, then just go and grab a coffee, it is copying in the background :-)
-600MB may take around 16 minutes.</p>
+<p>If you move large files, finder may tell you: copy zero bytes of…. Estimating time remaining… and it looks like finder hangs showing turning colorball, then just go and grab a coffee, it is copying in the background :-)</p>
+<p>600MB may take around 16 Minutes.</p>
 </div>
 </div>
 </div>

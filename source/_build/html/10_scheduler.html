@@ -35,7 +35,9 @@
 
     
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="DMX OSC MIDI" href="11_dmxoscmidi.html" />
+    <link rel="prev" title="EXPANSION" href="09_expansion.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -80,7 +82,7 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="01_first_steps.html">First Steps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_controlpanel.html">CONTROL PANEL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_autostart.html">AUTOSTART</a></li>
@@ -89,6 +91,26 @@
 <li class="toctree-l1"><a class="reference internal" href="06_video.html">VIDEO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_expansion.html">EXPANSION</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">SCHEDULER</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#clock">CLOCK</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">SCHEDULER</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">SCHEDULER</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#timetable">TIMETABLE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#commands">COMMANDS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#countdown">COUNTDOWN</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="11_dmxoscmidi.html">DMX OSC MIDI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#resolution">RESOLUTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#rotate-flip">ROTATE &amp; FLIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#sleep">SLEEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
 </ul>
 
             
@@ -188,6 +210,19 @@
 </div>
 <img alt="_images/10_scheduler_shema.png" src="_images/10_scheduler_shema.png" />
 </div>
+<div class="section" id="countdown">
+<h2>COUNTDOWN<a class="headerlink" href="#countdown" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/10_CP_scheduler_countdown.png" src="_images/10_CP_scheduler_countdown.png" />
+<p><strong>60</strong> =&gt; Enter the time in Seconds</p>
+<p>and click:</p>
+<p><strong>set Time</strong> =&gt; Set time</p>
+<p><strong>Start</strong> =&gt; Starts the countdown, when finished it will trigger all videos as Master</p>
+<p><strong>Stop</strong> =&gt; Stops the countdown</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Countdown was introduced with image 4.0.7, older systems need <code class="docutils literal notranslate"><span class="pre">python3-pygame</span></code> to be installed!</p>
+</div>
+</div>
 </div>
 
 
@@ -195,6 +230,15 @@
            
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="11_dmxoscmidi.html" class="btn btn-neutral float-right" title="DMX OSC MIDI" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="09_expansion.html" class="btn btn-neutral float-left" title="EXPANSION" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
