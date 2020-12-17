@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>CONTROL PANEL &mdash; PocketVJ Exhibition 4.x documentation</title>
+  <title>TROUBLESHOOTING &mdash; PocketVJ Exhibition 4.x documentation</title>
   
 
   
@@ -36,8 +36,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="AUTOSTART" href="03_autostart.html" />
-    <link rel="prev" title="First Steps" href="01_first_steps.html" /> 
+    <link rel="prev" title="SYSTEM SETTINGS" href="14_systemsettings.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,13 +83,7 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="01_first_steps.html">First Steps</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">CONTROL PANEL</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#shortlinks">SHORTLINKS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#output-window">OUTPUT WINDOW</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#colored-tabs">COLORED TABS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#direct-connecting-with-rj45">DIRECT CONNECTING WITH RJ45</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="02_controlpanel.html">CONTROL PANEL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_autostart.html">AUTOSTART</a></li>
 <li class="toctree-l1"><a class="reference internal" href="04_filemanagement.html">FILE MANAGEMENT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="05_presenter.html">PRESENTER</a></li>
@@ -98,6 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
 <li class="toctree-l1"><a class="reference internal" href="09_expansion.html">EXPANSION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
 <li class="toctree-l1"><a class="reference internal" href="11_dmxoscmidi.html">DMX OSC MIDI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
 <li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
@@ -107,6 +101,10 @@
 <li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">TROUBLESHOOTING</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#create-h264-movies">CREATE h264 MOVIES</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -153,13 +151,13 @@
     
       <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>CONTROL PANEL</li>
+      <li>TROUBLESHOOTING</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/02_controlpanel.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/15_troubleshooting.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -172,61 +170,50 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="control-panel">
-<h1>CONTROL PANEL<a class="headerlink" href="#control-panel" title="Permalink to this headline">¶</a></h1>
-<p>Videotutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/2/pocketvj-exhibition-overview">https://video.pocketvj.com/AVideo/video/2/pocketvj-exhibition-overview</a></p>
-<ol class="arabic simple">
-<li><p>Make sure your PocketVJ is powered up and running.</p></li>
-<li><p>On your computer, phone or tablet, go to the wifi and connect to your PocketVJ’s Wifi network. Its named <code class="docutils literal notranslate"><span class="pre">vj100</span></code> or something similar starting with <code class="docutils literal notranslate"><span class="pre">vj___</span></code>.</p></li>
-</ol>
-<img alt="_images/02_Wifi_select.png" src="_images/02_Wifi_select.png" />
-<ol class="arabic simple" start="3">
-<li><p>Enter the password fot the wifi connection (its printed onto the paper card) and wait until the connection is established.</p></li>
-</ol>
-<img alt="_images/02_Wifi_password.png" src="_images/02_Wifi_password.png" />
-<ol class="arabic simple" start="4">
-<li><p>Open a web-browser (use chrome) and enter into the wifi ip of your PocketVJ into the address bar: ‘’<a class="reference external" href="http://2.0.0.100">http://2.0.0.100</a>’’ (this is depending on wifi name, see on the printed card).
-You see the Control Panel:</p></li>
-</ol>
-<img alt="_images/02_ControlPanel.png" src="_images/02_ControlPanel.png" />
-<p>Note:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>- Alternatively you can connect your PocketVJ via wired network.
-- Make sure your router is configured to 192.168.2.1. Access via address: http://192.168.2.***
-- If you lost the sticker with the IP address, go to &quot;Network Settings&quot; and click ‘Display IP’.
-- There are some known issues with Safari / Edge / IE browsers = Use Chrome and its derivates.
-</pre></div>
+  <div class="section" id="troubleshooting">
+<h1>TROUBLESHOOTING<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h1>
+<p><strong>Get help online:</strong> <a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-exh/issues">https://github.com/magdesign/PocketVJ-CP-exh/issues</a></p>
+<p>There will always be a solution :-)</p>
+<p><strong>Movie plays, but stutters</strong> =&gt; Check if it is really a h.264 compressed movie.</p>
+<p><strong>I dont get an IP address from the PocketVJ</strong> =&gt; Be patient, try again.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Sometimes there are power peaks which can cause that the Wifi signal is not strong enough.
+Known are some issues with Hdmi to VGA adapters with old VGA devices who suck a lot of power.
+Also after plugging in some USB sticks. If there are many wireless devices in the room, change the wifi channel, since most units use channel 6 as standard.</p>
 </div>
-<div class="section" id="shortlinks">
-<h2>SHORTLINKS<a class="headerlink" href="#shortlinks" title="Permalink to this headline">¶</a></h2>
-<p>The Control Panel shows you a bunch of shortlinks and colored tabs:</p>
-<img alt="_images/02_CP_shortlinks.png" src="_images/02_CP_shortlinks.png" />
-<p>The shortlinks from left to right are:</p>
-<p><strong>STOP</strong> =&gt; Stops all running tasks.</p>
-<p><strong>PLAY</strong> =&gt; Starts the Videoplayer as Master</p>
-<p><strong>PAUSE</strong> =&gt; Pause Video / Mapping</p>
-<p><strong>FASTFORWARD</strong> =&gt; Jump 20 Seconds forward in video</p>
-<p><strong>FILEBROWSER</strong> =&gt; Open FIlebrowser</p>
-<p><strong>SCREENSHOT</strong> =&gt; Take a screenshot of the current output, stores under images</p>
-<p><strong>TESTSCREEN</strong> =&gt; Display a testscreen</p>
-<p><strong>RESOLUTION CHECK</strong> =&gt; Check the current used resolution of the attached device</p>
-<p><strong>REBOOT</strong> =&gt; Reboots
-(make sure to close your browser widow to prevent boot loops!)</p>
-<p><strong>POWEROFF</strong> =&gt; Shuts down the PocketVJ</p>
-</div>
-<div class="section" id="output-window">
-<h2>OUTPUT WINDOW<a class="headerlink" href="#output-window" title="Permalink to this headline">¶</a></h2>
-<p>Below the shortlinks you have the Output Window which will display messages from selected functions:</p>
-<img alt="_images/02_CP_output.png" src="_images/02_CP_output.png" />
-</div>
-<div class="section" id="colored-tabs">
-<h2>COLORED TABS<a class="headerlink" href="#colored-tabs" title="Permalink to this headline">¶</a></h2>
-<p>The colored tabs contain the various control sections:</p>
-<img alt="_images/02_CP_tabs.png" src="_images/02_CP_tabs.png" />
-<p>which are explained on the following pages.</p>
-</div>
-<div class="section" id="direct-connecting-with-rj45">
-<h2>DIRECT CONNECTING WITH RJ45<a class="headerlink" href="#direct-connecting-with-rj45" title="Permalink to this headline">¶</a></h2>
-<p>see video tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/20/direct-rj45-to-your-pocketvj">https://video.pocketvj.com/AVideo/video/20/direct-rj45-to-your-pocketvj</a></p>
+<p><strong>Movie is not playing</strong></p>
+<ul class="simple">
+<li><p>Make sure that there is no space or special character in the filename and it is not longer than 16 characters, my_video_file.mp4 not: my video file.mp4.</p></li>
+<li><p>Make sure your video is converted with the h264 codec (this causes in most cases the error)</p></li>
+<li><p>Make sure your video data is in the correct folder (/media/internal/video/).</p></li>
+<li><p>Make sure your PocketVJ is not configured to ‘Slideshow’ mode.</p></li>
+<li><p>Make sure audio output is set to HDMI/ Jack or both if there is no external soundcard connected, otherwise it will search for the ALSA device and will not start.</p></li>
+</ul>
+<p><strong>USB-Stick does not work anymore on my computer</strong> =&gt; Plug it back into the PocketVJ and Click UNMOUNT in the control panel.</p>
+<p>Make sure to always mount and unmount your USB devices!</p>
+<p><strong>Connected several PocketVJs over a router</strong>
+- Check the Gateway settings of your router, in original mode the PocketVJ runs in 192.168.2.1</p>
+<p><strong>Remote “Power On Projector” does not work</strong></p>
+<ul class="simple">
+<li><p>Login to projector, enable PJLink, disable all passwords</p></li>
+<li><p>Under Service, enable DDDP and set the Crestron control IP to: 192.168.2.254</p></li>
+<li><p>make sure the Projector has following network info:</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">IP:</span> <span class="pre">192.168.2.254</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">Subnet:</span> <span class="pre">255.255.255.0</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">Default</span> <span class="pre">Gateway:</span> <span class="pre">192.168.2.1</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">DNS</span> <span class="pre">Server:</span> <span class="pre">192.168.2.1</span></code></p>
+<ul class="simple">
+<li><p>check this troubleshoot video: <a class="reference external" href="https://vimeo.com/379009854">https://vimeo.com/379009854</a></p></li>
+<li><p>make sure the computer which is connected to the PocketVJ CP is not connected to second network, for example RJ45 in your local network and wifi to PocketVJ, if this is the case, unplug rj45 until it finds the projector, then you can plug it in again.</p></li>
+<li><p>Get a list of standard passwords for projectors here: <a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-v3/blob/master/projector_passwords.md">https://github.com/magdesign/PocketVJ-CP-v3/blob/master/projector_passwords.md</a></p></li>
+</ul>
+<div class="section" id="create-h264-movies">
+<h2>CREATE h264 MOVIES<a class="headerlink" href="#create-h264-movies" title="Permalink to this headline">¶</a></h2>
+<p>Best way to do this is using <a class="reference external" href="https://handbrake.fr">https://handbrake.fr</a></p>
+<p>Beleive me, the Adobe codecs are crap!</p>
+<p><strong>Finally, after several hours I reached the end of the documentation, if there is somethingn wrong or missing, please tell me!</strong></p>
 </div>
 </div>
 
@@ -238,10 +225,8 @@ You see the Control Panel:</p></li>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="03_autostart.html" class="btn btn-neutral float-right" title="AUTOSTART" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="01_first_steps.html" class="btn btn-neutral float-left" title="First Steps" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="14_systemsettings.html" class="btn btn-neutral float-left" title="SYSTEM SETTINGS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

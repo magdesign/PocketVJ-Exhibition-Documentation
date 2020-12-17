@@ -25,15 +25,15 @@ SLIDE SHOW
 
 
 SLIDE TIME
-*********
+***********
 
 - Define the time until next slide will appear
 
-Note:
-::
+.. note::
     - Do not use empty spaces, special characters and very long filenames.
     - Rename your images with a short name without any empty spaces or umlauts, you can do this also with the 'Filename-Fixer' function.
-   
+
+
     
 
 
@@ -44,7 +44,9 @@ OVERLAY
 
 - Create an overlay.png with transparency in the /internal/images/ folder and overlay it over the Videoplayer
 
-for example your company logo.
+see video tutorial: https://video.pocketvj.com/AVideo/video/23/pocketvj-use-an-overlay
+
+
 
 IMPRESS
 ********

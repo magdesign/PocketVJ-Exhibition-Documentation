@@ -40,12 +40,12 @@ Content
    07_sharing
    08_mapping
    09_expansion
-   10_Scheduler
+   10_scheduler
    11_dmxoscmidi
    12_display
    13_networksettings
    14_systemsettings
-
+   15_troubleshooting
 
 
 

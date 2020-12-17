@@ -56,4 +56,4 @@ PROJECTOR
 
 
 
-see video tutorial: 
+see video tutorial: https://video.pocketvj.com/AVideo/video/25/pocketvj-pjlink-a-projector

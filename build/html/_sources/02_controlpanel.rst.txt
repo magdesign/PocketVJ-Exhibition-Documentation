@@ -81,3 +81,11 @@ The colored tabs contain the various control sections:
 .. image:: _images/02_CP_tabs.png
 
 which are explained on the following pages.
+
+
+
+DIRECT CONNECTING WITH RJ45
+****************************
+
+see video tutorial: https://video.pocketvj.com/AVideo/video/20/direct-rj45-to-your-pocketvj
+
