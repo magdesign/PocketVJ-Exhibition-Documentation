@@ -29,7 +29,6 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -101,6 +100,7 @@
 <li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
 <li class="toctree-l1"><a class="reference internal" href="09_expansion.html">EXPANSION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
 <li class="toctree-l1"><a class="reference internal" href="11_dmxoscmidi.html">DMX OSC MIDI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
 <li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
@@ -110,6 +110,7 @@
 <li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
 </ul>
 
             
@@ -265,18 +266,12 @@ Connect all the PocketVJ’s together with an RJ45 network.</p>
 use a switch to connect more players, if you use a router, make sure its configured to 192.168.2.1</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<ul>
+<ul class="simple">
 <li><p>If you connect a slave after the master is already running, master must be restarted to detect the slave and send the timecode.</p></li>
 <li><p>We recommend to make the first 10s of the movie a still image, so there will be no visible syncs for the observer.</p></li>
 <li><p>Make sure there are only video files in the ‘video’ folder, if there are images etc. sync will not work.</p></li>
-<li><p>For syncing you must have same conditions for every Pocket VJ, that means:</p>
-<blockquote>
-<div><ul class="simple">
-<li><p>Same output resolution, movie files with same length, framerate and bitrate.</p></li>
-</ul>
-<p>(if you use different conditions, you might have to adjust the sync window by hand)</p>
-</div></blockquote>
-</li>
+<li><p>For syncing you must have same conditions for every Pocket VJ, that means:</p></li>
+<li><p>Same output resolution, movie files with same length, framerate and bitrate (if you use different conditions, you might have to adjust the sync window by hand)</p></li>
 <li><p>Sync has an accuracy of ±3fps (regular its between 0 and1 fps)</p></li>
 <li><p>If there is always the same offset of synced files you can manually change the sync window and tolerance to fit our needs.</p></li>
 <li><p>Its depending on the bitrate check: <a class="reference external" href="https://github.com/turingmachine/omxplayer-sync">https://github.com/turingmachine/omxplayer-sync</a> or ask <a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-exh/issues">https://github.com/magdesign/PocketVJ-CP-exh/issues</a></p></li>

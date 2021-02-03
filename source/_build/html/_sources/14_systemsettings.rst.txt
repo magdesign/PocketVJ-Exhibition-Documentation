@@ -39,6 +39,10 @@ see video tutorial:  https://video.pocketvj.com/AVideo/video/7/pocketvj-exhibiti
 
 or: https://video.pocketvj.com/AVideo/video/6/pocketvj-exhibition-alternative-update
 
+For precise DMX recording/playback make sure to have the latest OLA installed.
+
+If you have PVJ Version 4.0.6 or older, you need to install ``pygame`` to use ``Countdown`` and ``Webcam`` preview.
+
 
 FACTORY RESET
 *************

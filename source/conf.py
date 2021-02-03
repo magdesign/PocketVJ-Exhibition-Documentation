@@ -30,9 +30,9 @@ release = '4.x'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['rst2pdf.pdfbuilder']
-pdf_documents = [('index', u'rst2pdf', u'Sample rst2pdf doc', u'Marc-André Gasser'),]
-
+#extensions = ['sphinx.ext.autodoc','rst2pdf.pdfbuilder']
+#pdf_documents = [('index', u'Sample rst2pdf doc', u'Marc-André Gasser'),]
+#pdf_stylesheets = ['sphinx','kerning','a4']
 
 
 # Add any paths that contain templates here, relative to this directory.

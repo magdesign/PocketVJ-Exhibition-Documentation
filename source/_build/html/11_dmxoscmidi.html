@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>DMX OSC MIDI &mdash; PocketVJ Exhibition 4.x documentation</title>
   
@@ -16,7 +16,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -29,13 +32,14 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="DISPLAY" href="12_display.html" />
+    <link rel="prev" title="SCHEDULER" href="10_scheduler.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -49,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> PocketVJ Exhibition
+            <a href="index.html" class="icon icon-home"> PocketVJ Exhibition
           
 
           
@@ -80,7 +84,7 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="01_first_steps.html">First Steps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_controlpanel.html">CONTROL PANEL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_autostart.html">AUTOSTART</a></li>
@@ -89,6 +93,29 @@
 <li class="toctree-l1"><a class="reference internal" href="06_video.html">VIDEO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_expansion.html">EXPANSION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">DMX OSC MIDI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#ola">OLA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ola-panel">OLA PANEL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dmx-recorder">DMX RECORDER</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#universe">Universe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dmx-player">DMX PLAYER</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#artnet-dmx-remote-control">ArtNet/DMX Remote Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#osc">OSC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#midi">MIDI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#midi-recorder">MIDI RECORDER</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#resolution">RESOLUTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#rotate-flip">ROTATE &amp; FLIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#sleep">SLEEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
 </ul>
 
             
@@ -129,6 +156,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -140,7 +169,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/11_dmxoscmidi.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -157,7 +186,7 @@
   <div class="section" id="dmx-osc-midi">
 <h1>DMX OSC MIDI<a class="headerlink" href="#dmx-osc-midi" title="Permalink to this headline">¶</a></h1>
 <p>This section is for recording and playback DMX, ArtNet, sACN and remote controlling via OSC, Midi, UDP or DMX</p>
-<p>see video tutorial for recording/playback: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/12/pocketvj-exhibition-artnet-recording-and-playback-1">https://video.pocketvj.com/AVideo/video/12/pocketvj-exhibition-artnet-recording-and-playback-1</a></p>
+<p>see video tutorial for recording/playback: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/37/pocketvj-exhibition_dmx_in_out_recording">https://video.pocketvj.com/AVideo/video/37/pocketvj-exhibition_dmx_in_out_recording</a></p>
 <p>see video tutorial for remote controlling: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/14/pocketvj-exhibition-artnet-dmx-remote-control">https://video.pocketvj.com/AVideo/video/14/pocketvj-exhibition-artnet-dmx-remote-control</a></p>
 <div class="section" id="ola">
 <h2>OLA<a class="headerlink" href="#ola" title="Permalink to this headline">¶</a></h2>
@@ -244,28 +273,29 @@ or kindly ask me to add the features you need.</p>
            
           </div>
           <footer>
-  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="12_display.html" class="btn btn-neutral float-right" title="DISPLAY" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="10_scheduler.html" class="btn btn-neutral float-left" title="SCHEDULER" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2021, M.A.Gasser, https://pocketvj.com
+        &#169; Copyright 2021, M.A.Gasser, https://pocketvj.com.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 

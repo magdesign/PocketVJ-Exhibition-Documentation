@@ -24,7 +24,7 @@ There will always be a solution :-)
 - Make sure your video is converted with the h264 codec (this causes in most cases the error)
 - Make sure your video data is in the correct folder (/media/internal/video/).
 - Make sure your PocketVJ is not configured to ‘Slideshow’ mode.
-- Make sure audio output is set to HDMI/ Jack or both if there is no external soundcard connected, otherwise it will search for the ALSA device and will not start.
+- **Make sure audio output is set to HDMI/Jack** if there is no external soundcard connected, otherwise it will search for the ALSA device and will not start.
 
 **USB-Stick does not work anymore on my computer** => Plug it back into the PocketVJ and Click UNMOUNT in the control panel.
 
@@ -65,4 +65,6 @@ Beleive me, the Adobe codecs are crap!
 
 
 
-**Finally, after several hours I reached the end of the documentation, if there is somethingn wrong or missing, please tell me!**
+**Finally, after several hours I reached the end of the documentation, if there is something wrong or missing, please tell me!**
+
+There might be a few typos since this is all written in a simple text editor.... :-)

@@ -106,8 +106,7 @@ use a switch to connect more players, if you use a router, make sure its configu
     - For syncing you must have same conditions for every Pocket VJ, that means:
 
 
-        - Same output resolution, movie files with same length, framerate and bitrate.
-        (if you use different conditions, you might have to adjust the sync window by hand)
+    - Same output resolution, movie files with same length, framerate and bitrate (if you use different conditions, you might have to adjust the sync window by hand)
 
     - Sync has an accuracy of ±3fps (regular its between 0 and1 fps)
 

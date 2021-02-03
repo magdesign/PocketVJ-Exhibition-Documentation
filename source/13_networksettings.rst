@@ -12,11 +12,14 @@ INFO
 CHANGE IP
 *********
 
-**192.168.2.** => sets the ip range to 192.168.2.***
+**192.168.2.** => Sets the ip range to ``192.168.2.***`` (reverts from dhcp)
 
-**10.0.0.0.** => set the ip range to 10.0.0.0.***
+**10.0.0.0.** => Set the ip range to ``10.0.0.0.***`` (reverts from dhcp)
 
-**RJ45 DHCP** => sets the rj45 connection to dhcp to get the ip adress from a router
+**RJ45 DHCP** => Sets the rj45 connection to dhcp to get the ip address from a router
+
+.. note::
+    The Wifi IP will always stay the same!
 
 
 REMOTE ACCESS
@@ -30,19 +33,38 @@ https://video.pocketvj.com/AVideo/video/3/pocketvj-exhibition-access-from-everyw
 CP PASSWORD
 ***********
 
+Used to lock the Control Panel with a password.
+
+Username: ``admin``
+
+**Enable** => Enables the CP password
+
+**Disable** => Disables the CP password
+
+**Entry Filed** => Set your own password
 
 
-.. image:: _images/13_CP_connectwifi.png
+
+
 
 
 
 CONNECTING TO WIFI
 *******************
 
-Used to connect to an in house wifi with internet so you can accesss from anywhere.
+Used to connect to an in house Wifi with internet so you can accesss from anywhere.
+
+.. image:: _images/13_CP_connectwifi.png
 
 see video tutorial: https://video.pocketvj.com/AVideo/video/11/pocketvj-exhibition-wifi-connecting
 
+
+WIFI ANTENNA
+************
+
+Enable or disable the internal wifi
+
+Change Wifi channels, useful when using multiple PocketVJ's in public spaces to split up the frequencies.
 
 .. image:: _images/13_CP_wifiantenna.png
 

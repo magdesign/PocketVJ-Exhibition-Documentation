@@ -4,7 +4,7 @@ DMX OSC MIDI
 
 This section is for recording and playback DMX, ArtNet, sACN and remote controlling via OSC, Midi, UDP or DMX
 
-see video tutorial for recording/playback: https://video.pocketvj.com/AVideo/video/12/pocketvj-exhibition-artnet-recording-and-playback-1
+see video tutorial for recording/playback: https://video.pocketvj.com/AVideo/video/37/pocketvj-exhibition_dmx_in_out_recording
 
 see video tutorial for remote controlling: https://video.pocketvj.com/AVideo/video/14/pocketvj-exhibition-artnet-dmx-remote-control
 

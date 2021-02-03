@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>EXPANSION &mdash; PocketVJ Exhibition 4.x documentation</title>
   
@@ -16,7 +16,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -29,13 +32,14 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
     
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="SCHEDULER" href="10_scheduler.html" />
+    <link rel="prev" title="MAPPING" href="08_mapping.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -49,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> PocketVJ Exhibition
+            <a href="index.html" class="icon icon-home"> PocketVJ Exhibition
           
 
           
@@ -80,7 +84,7 @@
               
             
             
-              <ul>
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="01_first_steps.html">First Steps</a></li>
 <li class="toctree-l1"><a class="reference internal" href="02_controlpanel.html">CONTROL PANEL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="03_autostart.html">AUTOSTART</a></li>
@@ -89,6 +93,26 @@
 <li class="toctree-l1"><a class="reference internal" href="06_video.html">VIDEO</a></li>
 <li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
 <li class="toctree-l1"><a class="reference internal" href="08_mapping.html">MAPPING</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">EXPANSION</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pir-sensor">PIR SENSOR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connect-pir">CONNECT PIR</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#buttons">BUTTONS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connect-buttons">CONNECT BUTTONS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sensors">SENSORS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#schematics">SCHEMATICS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="11_dmxoscmidi.html">DMX OSC MIDI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html">DISPLAY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#info">INFO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#resolution">RESOLUTION</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#rotate-flip">ROTATE &amp; FLIP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#sleep">SLEEP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="12_display.html#projector">PROJECTOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
 </ul>
 
             
@@ -129,6 +153,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -140,7 +166,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/09_expansion.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -162,9 +188,9 @@
 <h2>PIR SENSOR<a class="headerlink" href="#pir-sensor" title="Permalink to this headline">¶</a></h2>
 <p>With the PIR Sensor attached, you can create an interactive installation which triggers a random video as soon as the sensor detects motion.</p>
 <ul class="simple">
-<li><p>This works with <a href="#id1"><span class="problematic" id="id2">*</span></a>.mp4 videos and/or <a href="#id3"><span class="problematic" id="id4">*</span></a>.mp3 audios.</p></li>
+<li><p>This works with <a href="#id1"><span class="problematic" id="id2">*</span></a>.mp4 videos and/or <a href="#id3"><span class="problematic" id="id4">*</span></a>.mp3 audios</p></li>
 <li><p>Copy the loop (default, standby) video to the media/internal/pir/loop folder</p></li>
-<li><p>Copy the trigger videos (can by any amount) to the media/internal/pir/trigger folder.</p></li>
+<li><p>Copy the trigger videos (can by any amount) to the media/internal/pir/trigger folder</p></li>
 </ul>
 <p>see video tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor">https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor</a></p>
 </div>
@@ -201,28 +227,29 @@
            
           </div>
           <footer>
-  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="10_scheduler.html" class="btn btn-neutral float-right" title="SCHEDULER" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="08_mapping.html" class="btn btn-neutral float-left" title="MAPPING" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2021, M.A.Gasser, https://pocketvj.com
+        &#169; Copyright 2021, M.A.Gasser, https://pocketvj.com.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 

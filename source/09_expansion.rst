@@ -13,9 +13,9 @@ PIR SENSOR
 
 With the PIR Sensor attached, you can create an interactive installation which triggers a random video as soon as the sensor detects motion.
 
-- This works with *.mp4 videos and/or *.mp3 audios.
+- This works with *.mp4 videos and/or *.mp3 audios
 - Copy the loop (default, standby) video to the media/internal/pir/loop folder
-- Copy the trigger videos (can by any amount) to the media/internal/pir/trigger folder.
+- Copy the trigger videos (can by any amount) to the media/internal/pir/trigger folder
 
 
 see video tutorial: https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor
