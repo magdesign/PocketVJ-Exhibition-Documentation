@@ -51,11 +51,16 @@ PROJECTOR
     - Default ip is: 192.168.2.254
     - For custom ip's make sure to stay in the same range as the PocketVJ's rj45 ip
     - Disable password and powersettings on projector
+    - When coming from a CP older than 4.0.3, make sure to hit "Factory Reset" to change to the new projector control system
 
 .. image:: _images/12_CP_projector.png
 
-
-
 see video tutorial: https://video.pocketvj.com/AVideo/video/25/pocketvj-pjlink-a-projector
 
-and if it does not work without a pjlink password: https://video.pocketvj.com/AVideo/video/31/pocketvj_pjlink_with_password
+
+
+If you need a pjlink password, edit:
+``/home/pvj/.local/share/pjlink/pjlink.config`` and add a new line containing:
+``password = yourpassword``
+
+(Password input field coming in next CP release)
