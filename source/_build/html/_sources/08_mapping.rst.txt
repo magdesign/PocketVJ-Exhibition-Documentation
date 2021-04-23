@@ -3,9 +3,12 @@ MAPPING
 
 
 .. note::
-    - **Make sure there is a cabled USB mouse connected to the PocketVJ before booting!**
 
-    - If you use an IR mouse, you need to use an IR Keyboard to control the mapper, (CP will not work). 
+    - **If you want to map with a mouse, connect a cabled USB mouse before booting.**
+
+    - since CP 4.0.5 and higher, you are able to remotely map without any mouse or keyboard connected.
+
+    - If you use an IR mouse, you need to use an IR Keyboard to control the mapper, CP will not work. 
 
     - If you use an IR mouse, you need to use an IR Keyboard to control the mapper, CP will not work.
     
