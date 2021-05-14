@@ -36,6 +36,7 @@
     
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="END" href="99_theend.html" />
     <link rel="prev" title="TROUBLESHOOTING" href="15_troubleshooting.html" /> 
 </head>
 
@@ -107,6 +108,7 @@
 <li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">IR REMOTE LIRC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="99_theend.html">END</a></li>
 </ul>
 
             
@@ -215,8 +217,6 @@ Now we need to enable the IR sender:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">irsend</span> <span class="n">SEND_ONCE</span> <span class="n">laserbeamer</span> <span class="n">KEY_POWER</span>
 </pre></div>
 </div>
-<p>otherwise</p>
-<p>ih</p>
 <p>Recording your own IR is way more complicated and will not be described here in detail, only some hints:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">sudo</span> <span class="n">nano</span> <span class="o">/</span><span class="n">etc</span><span class="o">/</span><span class="n">lirc</span><span class="o">/</span><span class="n">lirc_options</span><span class="o">.</span><span class="n">conf</span> <span class="o">=&gt;</span>
 <span class="n">driver</span>          <span class="o">=</span> <span class="n">default</span>
@@ -266,6 +266,90 @@ Now we need to enable the IR sender:</p>
 <span class="n">KEY_F4</span> <span class="p">(</span><span class="n">keystone</span><span class="o">-</span><span class="p">)</span>
 </pre></div>
 </div>
+<p>I ended up in listing the raw ir commands in terminal with:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mode2</span> <span class="o">-</span><span class="n">d</span> <span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">lirc1</span>
+</pre></div>
+</div>
+<p>and then writing my own config file like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="c1"># Device(s) controlled by this remote:</span>
+
+  <span class="n">begin</span> <span class="n">remote</span>
+
+<span class="n">name</span>  <span class="n">laserbeamer</span>
+<span class="n">flags</span> <span class="n">RAW_CODES</span><span class="o">|</span><span class="n">CONST_LENGTH</span>
+<span class="n">eps</span>            <span class="mi">30</span>
+<span class="n">aeps</span>          <span class="mi">100</span>
+
+<span class="n">gap</span>          <span class="mi">108203</span>
+
+    <span class="n">begin</span> <span class="n">raw_codes</span>
+
+        <span class="n">name</span> <span class="n">KEY_POWER</span>
+           <span class="mi">9059</span>    <span class="mi">4475</span>     <span class="mi">594</span>     <span class="mi">539</span>     <span class="mi">582</span>     <span class="mi">553</span>
+            <span class="mi">569</span>     <span class="mi">541</span>     <span class="mi">597</span>     <span class="mi">535</span>     <span class="mi">590</span>     <span class="mi">545</span>
+            <span class="mi">569</span>     <span class="mi">539</span>     <span class="mi">595</span>     <span class="mi">538</span>     <span class="mi">589</span>    <span class="mi">1655</span>
+            <span class="mi">595</span>    <span class="mi">1675</span>     <span class="mi">570</span>    <span class="mi">1655</span>     <span class="mi">608</span>    <span class="mi">1655</span>
+            <span class="mi">595</span>    <span class="mi">1675</span>     <span class="mi">569</span>    <span class="mi">1674</span>     <span class="mi">590</span>    <span class="mi">1655</span>
+            <span class="mi">599</span>    <span class="mi">1671</span>     <span class="mi">570</span>     <span class="mi">539</span>     <span class="mi">595</span>     <span class="mi">538</span>
+            <span class="mi">566</span>     <span class="mi">547</span>     <span class="mi">591</span>     <span class="mi">540</span>     <span class="mi">595</span>    <span class="mi">1651</span>
+            <span class="mi">568</span>     <span class="mi">568</span>     <span class="mi">591</span>     <span class="mi">539</span>     <span class="mi">589</span>     <span class="mi">545</span>
+            <span class="mi">569</span>     <span class="mi">540</span>     <span class="mi">595</span>    <span class="mi">1674</span>     <span class="mi">570</span>    <span class="mi">1674</span>
+            <span class="mi">590</span>    <span class="mi">1658</span>     <span class="mi">593</span>     <span class="mi">518</span>     <span class="mi">609</span>    <span class="mi">1637</span>
+            <span class="mi">614</span>    <span class="mi">1675</span>     <span class="mi">570</span>    <span class="mi">1653</span>     <span class="mi">610</span>    <span class="mi">1660</span>
+
+
+        <span class="n">name</span> <span class="n">KEY_OK</span>
+           <span class="mi">9063</span>    <span class="mi">2205</span>     <span class="mi">591</span>
+
+        <span class="n">name</span> <span class="n">KEY_HOME</span>
+           <span class="mi">9072</span>    <span class="mi">2205</span>     <span class="mi">589</span>
+
+        <span class="n">name</span> <span class="n">KEY_VOLUMEUP</span>
+           <span class="mi">9097</span>    <span class="mi">2174</span>     <span class="mi">585</span>
+
+        <span class="n">name</span> <span class="n">KEY_VOLUMEDOWN</span>
+           <span class="mi">9043</span>    <span class="mi">2233</span>     <span class="mi">582</span>
+
+        <span class="n">name</span> <span class="n">KEY_F1</span>
+           <span class="mi">9075</span>    <span class="mi">2221</span>     <span class="mi">566</span>
+
+        <span class="n">name</span> <span class="n">KEY_F2</span>
+           <span class="mi">9065</span>    <span class="mi">2206</span>     <span class="mi">590</span>
+
+        <span class="n">name</span> <span class="n">KEY_LEFT</span>
+           <span class="mi">9050</span>    <span class="mi">2229</span>     <span class="mi">591</span>
+
+        <span class="n">name</span> <span class="n">KEY_UP</span>
+           <span class="mi">9119</span>    <span class="mi">2159</span>     <span class="mi">585</span>
+
+        <span class="n">name</span> <span class="n">KEY_DOWN</span>
+           <span class="mi">9049</span>    <span class="mi">2228</span>     <span class="mi">562</span>
+
+        <span class="n">name</span> <span class="n">KEY_RIGHT</span>
+           <span class="mi">9057</span>    <span class="mi">2207</span>     <span class="mi">587</span>
+
+        <span class="n">name</span> <span class="n">KEY_MEDIA</span>
+           <span class="mi">9039</span>    <span class="mi">4485</span>     <span class="mi">586</span>     <span class="mi">545</span>     <span class="mi">560</span>     <span class="mi">575</span>
+            <span class="mi">564</span>     <span class="mi">567</span>     <span class="mi">567</span>     <span class="mi">545</span>     <span class="mi">560</span>     <span class="mi">595</span>
+            <span class="mi">543</span>     <span class="mi">567</span>     <span class="mi">568</span>     <span class="mi">564</span>     <span class="mi">541</span>    <span class="mi">1706</span>
+            <span class="mi">564</span>    <span class="mi">1702</span>     <span class="mi">543</span>    <span class="mi">1699</span>     <span class="mi">539</span>    <span class="mi">1707</span>
+            <span class="mi">568</span>    <span class="mi">1679</span>     <span class="mi">568</span>    <span class="mi">1697</span>     <span class="mi">540</span>    <span class="mi">1707</span>
+            <span class="mi">567</span>    <span class="mi">1701</span>     <span class="mi">542</span>     <span class="mi">568</span>     <span class="mi">567</span>     <span class="mi">565</span>
+            <span class="mi">563</span>     <span class="mi">551</span>     <span class="mi">565</span>     <span class="mi">567</span>     <span class="mi">567</span>     <span class="mi">565</span>
+            <span class="mi">539</span>    <span class="mi">1707</span>     <span class="mi">568</span>     <span class="mi">565</span>     <span class="mi">539</span>     <span class="mi">595</span>
+            <span class="mi">542</span>     <span class="mi">568</span>     <span class="mi">566</span>    <span class="mi">1702</span>     <span class="mi">551</span>    <span class="mi">1695</span>
+            <span class="mi">561</span>    <span class="mi">1682</span>     <span class="mi">568</span>    <span class="mi">1701</span>     <span class="mi">543</span>     <span class="mi">567</span>
+            <span class="mi">567</span>    <span class="mi">1685</span>     <span class="mi">558</span>    <span class="mi">1702</span>     <span class="mi">539</span>    <span class="mi">1707</span>
+
+        <span class="n">name</span> <span class="n">KEY_PLAY</span>
+           <span class="mi">9067</span>    <span class="mi">2227</span>     <span class="mi">568</span>
+
+    <span class="n">end</span> <span class="n">raw_codes</span>
+
+  <span class="n">end</span> <span class="n">remote</span>
+</pre></div>
+</div>
+<p>Which is extremely time consuming and frustrating work.</p>
 </div>
 
 
@@ -275,6 +359,8 @@ Now we need to enable the IR sender:</p>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="99_theend.html" class="btn btn-neutral float-right" title="END" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="15_troubleshooting.html" class="btn btn-neutral float-left" title="TROUBLESHOOTING" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>

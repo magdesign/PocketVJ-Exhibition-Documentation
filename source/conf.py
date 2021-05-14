@@ -19,7 +19,7 @@
 
 project = 'PocketVJ Exhibition'
 copyright = '2021, M.A.Gasser, https://pocketvj.com'
-author = 'M.A.Gasser'
+author = 'Marc-André Gasser'
 
 # The full version, including alpha/beta/rc tags
 release = '4.x'
