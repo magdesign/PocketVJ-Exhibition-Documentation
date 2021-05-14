@@ -1,3 +1,5 @@
+.. _troubleshooting:
+
 
 TROUBLESHOOTING
 ===============
@@ -7,9 +9,15 @@ TROUBLESHOOTING
 There will always be a solution :-)
 
 
-**Movie plays, but stutters** => Check if it is really a h.264 compressed movie.
+Movie plays, but stutters
+*************************
+=> Check if it is really a h.264 compressed movie.
 
-**I dont get an IP address from the PocketVJ** => Be patient, try again.
+
+
+I dont get an IP address from the PocketVJ
+******************************************
+=> Be patient, try again.
 
 
 .. note::
@@ -18,7 +26,8 @@ There will always be a solution :-)
     Also after plugging in some USB sticks. If there are many wireless devices in the room, change the wifi channel, since most units use channel 6 as standard.
 
 
-**Movie is not playing**
+Movie is not playing
+********************
 
 - Make sure that there is no space or special character in the filename and it is not longer than 16 characters, my_video_file.mp4 not: my video file.mp4.
 - Make sure your video is converted with the h264 codec (this causes in most cases the error)
@@ -30,10 +39,13 @@ There will always be a solution :-)
 
 Make sure to always mount and unmount your USB devices!
 
-**Connected several PocketVJs over a router**
+Connected several PocketVJs over a router
+*****************************************
 - Check the Gateway settings of your router, in original mode the PocketVJ runs in 192.168.2.1
 
-**Remote “Power On Projector” does not work**
+Remote “Power On Projector” does not work
+*****************************************
+
 
 - Login to projector, enable PJLink, disable all passwords
 - Under Service, enable DDDP and set the Crestron control IP to: 192.168.2.254
@@ -59,12 +71,7 @@ CREATE h264 MOVIES
 
 Best way to do this is using https://handbrake.fr
 
-Beleive me, the Adobe codecs are crap!
+Believe me, Adobe codecs are crap!
 
 
 
-
-
-**Finally, after several hours I reached the end of the documentation, if there is something wrong or missing, please tell me!**
-
-There might be a few typos since this is all written in a simple text editor.... :-)

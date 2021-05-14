@@ -1,3 +1,6 @@
+.. _expansion:
+
+
 EXPANSION
 =========
 
@@ -30,6 +33,8 @@ CONNECT PIR
 
 
 
+Its also possible to connect Ultrasonic sensors, ask me for more info.
+
 
 BUTTONS
 *******
@@ -51,11 +56,7 @@ SENSORS
 **Temperature** => see temperature/humidity from temperature sensor
 
 
-
-SCHEMATICS
-***********
-
-Attach a DHT11 Temperature/Humidity Sensor as shown in the diagram.
+Attached a DHT11 Temperature/Humidity Sensor as shown in the diagram.
 
 - **+5V** goes to PIN13
 - **GND** goes to PIN1
@@ -65,3 +66,12 @@ Attach a DHT11 Temperature/Humidity Sensor as shown in the diagram.
 .. image:: _images/09_temperature_connect.png
 
 
+
+**IR Sender diode** => See :ref:`irremote`
+
+- **+5V** goes to PIN13
+- **GND** goes to PIN1
+- **S** Signal goes to PIN6
+
+
+.. image:: _images/09_ir_connect.png

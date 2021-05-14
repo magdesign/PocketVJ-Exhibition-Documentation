@@ -1,3 +1,5 @@
+.. _display:
+
 
 DISPLAY
 ********
@@ -43,6 +45,8 @@ Set the display to sleep or wakeup
 
 
 
+
+
 PROJECTOR
 **********
 
@@ -64,3 +68,17 @@ If you need a pjlink password, edit:
 ``password = yourpassword``
 
 (Password input field coming in next CP release)
+
+
+PROJECTOR IR
+*************
+
+This is a bit advanced!
+
+You need to set your remote file first, which can be a cumbersome task,
+then add an IR sender as described in IR REMOTE :ref:`irremote` and :ref:`expansion`
+
+
+The trigger ON file is located in ``/var/www/sync/beameronir``
+
+The trigger OFF file is located in ``/var/www/sync/beameroffir``

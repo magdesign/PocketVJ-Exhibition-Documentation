@@ -29,6 +29,18 @@ Testtones
 
 **Volume 100** => sometimes needed if the USB sound level is low
 
+AUDIO Bluetooth
+****************
+
+This is currently a work in progress.
+
+First you need to "install bluetooth" under FIRMWARE.
+
+Then you can click "scan" to show the mac address of a device which you can connect.
+
+DIsconnect and pair does not work yet, I am on it :-)
+
+
 
 FIRMWARE
 *********
