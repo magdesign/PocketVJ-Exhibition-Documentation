@@ -5,14 +5,14 @@ PocketVJ Exhibition User Manual
 .. image:: _images/00_PocketVJ_Exhibition.jpg
 
 
-Version 02/2021
+Version 03/2021
 
-This user manual is published by MAG Design without any warranty.
+This user manual is published by magdesign without any warranty.
 
 Improvements and changes to this manual necessitated by typographical errors,
 inaccuracies of current information, or improvements to
-programs and hardware, may be made by MAG Design at any time and without notice.
-Such changes will, however, be incorporated into new editions of this User guide.
+programs and hardware may be made by magdesign at any time and without notice.
+Such changes will, however, be incorporated into new versions of this user manual.
 
 
 Under the copyright laws, this manual may not be copied in whole or in part 

@@ -188,17 +188,26 @@
 <div class="section" id="pir-sensor">
 <h2>PIR SENSOR<a class="headerlink" href="#pir-sensor" title="Permalink to this headline">¶</a></h2>
 <p>With the PIR Sensor attached, you can create an interactive installation which triggers a random video as soon as the sensor detects motion.</p>
-<ul class="simple">
+<blockquote>
+<div><ul class="simple">
 <li><p>This works with <a href="#id2"><span class="problematic" id="id3">*</span></a>.mp4 videos and/or <a href="#id4"><span class="problematic" id="id5">*</span></a>.mp3 audios</p></li>
 <li><p>Copy the loop (default, standby) video to the media/internal/pir/loop folder</p></li>
 <li><p>Copy the trigger videos (can by any amount) to the media/internal/pir/trigger folder</p></li>
 </ul>
+</div></blockquote>
 <p>see video tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor">https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor</a></p>
 </div>
 <div class="section" id="connect-pir">
 <h2>CONNECT PIR<a class="headerlink" href="#connect-pir" title="Permalink to this headline">¶</a></h2>
 <img alt="_images/09_pir_connect.png" src="_images/09_pir_connect.png" />
-<p>Its also possible to connect Ultrasonic sensors, ask me for more info.</p>
+<p>If you have trouble with the pir sensor, there is a testscript which you can run from terminal to check what its states:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="o">/</span><span class="n">var</span><span class="o">/</span><span class="n">www</span><span class="o">/</span><span class="n">sync</span><span class="o">/</span><span class="n">startpirtest</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>Factory standard the sensor is set to a distance range of ~5m, if you need another range, you can adjust this directly on
+the sensor. Gently unscrew it with a hex key and then change the range with a screwdriver:</p>
+<img alt="_images/09_pir_adjust.png" src="_images/09_pir_adjust.png" />
+<p>Its also possible to connect Ultrasonic sensors which can be mounted behind materials, ask me for more info.</p>
 </div>
 <div class="section" id="buttons">
 <h2>BUTTONS<a class="headerlink" href="#buttons" title="Permalink to this headline">¶</a></h2>

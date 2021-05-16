@@ -20,7 +20,7 @@ Then install the special patched version (needs CP 4.0.6 or newer) with::
 
  sudo apt-get install -y /var/www/sync/debs/liblirc-client0_0.9.4c-9_armhf.deb
  sudo apt-get install -y /var/www/sync/debs/liblirc0_0.9.4c-9_armhf.deb
- sudo apt-get install -y /var/www/sync/debs/lirc_0.9.4c-9_armhf.deb``
+ sudo apt-get install -y /var/www/sync/debs/lirc_0.9.4c-9_armhf.deb
 
 
 This will take a few minutes.

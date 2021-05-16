@@ -16,9 +16,9 @@ PIR SENSOR
 
 With the PIR Sensor attached, you can create an interactive installation which triggers a random video as soon as the sensor detects motion.
 
-- This works with *.mp4 videos and/or *.mp3 audios
-- Copy the loop (default, standby) video to the media/internal/pir/loop folder
-- Copy the trigger videos (can by any amount) to the media/internal/pir/trigger folder
+    - This works with *.mp4 videos and/or *.mp3 audios
+    - Copy the loop (default, standby) video to the media/internal/pir/loop folder
+    - Copy the trigger videos (can by any amount) to the media/internal/pir/trigger folder
 
 
 see video tutorial: https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor
@@ -32,8 +32,17 @@ CONNECT PIR
 .. image:: _images/09_pir_connect.png
 
 
+If you have trouble with the pir sensor, there is a testscript which you can run from terminal to check what its states::
 
-Its also possible to connect Ultrasonic sensors, ask me for more info.
+    python /var/www/sync/startpirtest.py
+
+Factory standard the sensor is set to a distance range of ~5m, if you need another range, you can adjust this directly on
+the sensor. Gently unscrew it with a hex key and then change the range with a screwdriver:
+
+.. image:: _images/09_pir_adjust.png
+
+
+Its also possible to connect Ultrasonic sensors which can be mounted behind materials, ask me for more info.
 
 
 BUTTONS
