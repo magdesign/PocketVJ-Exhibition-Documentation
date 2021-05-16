@@ -24,7 +24,20 @@ With the PIR Sensor attached, you can create an interactive installation which t
 see video tutorial: https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor
 
 
+SENSITIVITY
+***********
 
+Adjust after how many movements the video will be triggered.
+
+    - low => 30 movements
+    - medium => 20 movements
+    - high => 12 movements
+
+
+STILLSHOT
+*********
+
+Set the picture which will appear for approx. 1s when the loop file stops and the trigger file starts to play.
 
 CONNECT PIR
 ***********
@@ -62,7 +75,7 @@ CONNECT BUTTONS
 SENSORS
 *******
 
-**Temperature** => see temperature/humidity from temperature sensor
+**Temperature** => see temperature/humidity from temperature sensor.
 
 
 Attached a DHT11 Temperature/Humidity Sensor as shown in the diagram.
