@@ -25,6 +25,15 @@ OLA
 
 **Daemon off** => Turns off ola and the olad daemon
 
+DMX Remote
+**********
+
+.. note::
+    Create the remote listener on universe 15. 
+
+**DMX Remote ON** => enables the DMX remote control on Universe 15
+
+**DMX Remote OFF** => disables the DMX remote control on Universe 15
 
 OLA PANEL
 *********

@@ -97,3 +97,31 @@ Attached a DHT11 Temperature/Humidity Sensor as shown in the diagram.
 
 
 .. image:: _images/09_ir_connect.png
+
+
+
+BEACONS
+*******
+.. image:: _images/09_CP_beacon.png
+
+.. note::
+    Make sure Bluetooth is installed on your PocketVJ Exhibtion before using this function.
+
+    A Eddystone beacon UID looks like this: *4927cc84cab307e6952f*
+    and not longer!
+
+
+**Start** => Starts the beacon listener.
+
+**Stop** => Stops the beacon listener since regular stop button will not stop the beacon listener.
+
+**Set Beacon** => Insert your Eddystone UID beacon namespace to which you want to trigger stuff.
+
+
+**Beacon Info** => Display which beacon names you are listening to.
+
+**Beacon1, Beacon2, Beacon3** =>> Set the desired function to trigger.
+
+.. note::
+    Currently it will trigger one of the functions and then waits for 60seconds before looking again for beacons, if a beacon appears after this time, it will stop everything and trigger the function again.
+    Let me know if you have a better solution/idea on how to solve this. One solution is to enter the commands directly in the python script, so it will wait until the function stops.

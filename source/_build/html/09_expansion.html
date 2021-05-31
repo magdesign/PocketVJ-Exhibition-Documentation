@@ -102,6 +102,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#buttons">BUTTONS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#connect-buttons">CONNECT BUTTONS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sensors">SENSORS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#beacons">BEACONS</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
@@ -251,6 +252,26 @@ the sensor. Gently unscrew it with a hex key and then change the range with a sc
 <li><p><strong>S</strong> Signal goes to PIN6</p></li>
 </ul>
 <img alt="_images/09_ir_connect.png" src="_images/09_ir_connect.png" />
+</div>
+<div class="section" id="beacons">
+<h2>BEACONS<a class="headerlink" href="#beacons" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/09_CP_beacon.png" src="_images/09_CP_beacon.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure Bluetooth is installed on your PocketVJ Exhibtion before using this function.</p>
+<p>A Eddystone beacon UID looks like this: <em>4927cc84cab307e6952f</em>
+and not longer!</p>
+</div>
+<p><strong>Start</strong> =&gt; Starts the beacon listener.</p>
+<p><strong>Stop</strong> =&gt; Stops the beacon listener since regular stop button will not stop the beacon listener.</p>
+<p><strong>Set Beacon</strong> =&gt; Insert your Eddystone UID beacon namespace to which you want to trigger stuff.</p>
+<p><strong>Beacon Info</strong> =&gt; Display which beacon names you are listening to.</p>
+<p><strong>Beacon1, Beacon2, Beacon3</strong> =&gt;&gt; Set the desired function to trigger.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently it will trigger one of the functions and then waits for 60seconds before looking again for beacons, if a beacon appears after this time, it will stop everything and trigger the function again.
+Let me know if you have a better solution/idea on how to solve this. One solution is to enter the commands directly in the python script, so it will wait until the function stops.</p>
+</div>
 </div>
 </div>
 

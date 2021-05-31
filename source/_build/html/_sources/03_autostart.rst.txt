@@ -12,3 +12,5 @@ If it shall do nothing on boot or listen to the timetable or listen to OSC, sele
 **Scheduler/OSC**
 
 If it shall do noting but listen to OSC/Artnet ord DMX signals, select => **OSC/ArtNet**
+
+**Attention:** If Autostart is set to Bluetooth Beacon, this function can only be stopped in expansion section under Beacon => Stop
