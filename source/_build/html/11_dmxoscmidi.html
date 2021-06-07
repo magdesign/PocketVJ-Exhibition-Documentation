@@ -203,10 +203,14 @@
 <h2>DMX Remote<a class="headerlink" href="#dmx-remote" title="Permalink to this headline">¶</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Create the remote listener on universe 15.</p>
+<ul class="simple">
+<li><p>Create the remote listener on universe 15.</p></li>
+<li><p>If you send control commands via ArtNet over RJ45 make sure not to be connected via Wifi and having a DMX Monitor in the browser open, since this would give you a loop and will end in weird behavior.</p></li>
+</ul>
 </div>
 <p><strong>DMX Remote ON</strong> =&gt; enables the DMX remote control on Universe 15</p>
 <p><strong>DMX Remote OFF</strong> =&gt; disables the DMX remote control on Universe 15</p>
+<p>find the remote commands here: <a class="reference external" href="https://raw.githubusercontent.com/magdesign/PocketVJ-CP-exh/master/sync/artnet.conf">https://raw.githubusercontent.com/magdesign/PocketVJ-CP-exh/master/sync/artnet.conf</a></p>
 </div>
 <div class="section" id="ola-panel">
 <h2>OLA PANEL<a class="headerlink" href="#ola-panel" title="Permalink to this headline">¶</a></h2>

@@ -29,11 +29,18 @@ DMX Remote
 **********
 
 .. note::
-    Create the remote listener on universe 15. 
+    - Create the remote listener on universe 15. 
+    - If you send control commands via ArtNet over RJ45 make sure not to be connected via Wifi and having a DMX Monitor in the browser open, since this would give you a loop and will end in weird behavior.
+
 
 **DMX Remote ON** => enables the DMX remote control on Universe 15
 
 **DMX Remote OFF** => disables the DMX remote control on Universe 15
+
+find the remote commands here: https://raw.githubusercontent.com/magdesign/PocketVJ-CP-exh/master/sync/artnet.conf
+
+
+
 
 OLA PANEL
 *********
