@@ -9,6 +9,27 @@ TROUBLESHOOTING
 There will always be a solution :-)
 
 
+Not able to connect CP via browser
+***********************************
+
+.. note::
+    Some browsers force a https:// connection, which is not possible on PocketVJ and will cause trouble to not be able to connect.
+
+If you try to connect the CP via webbrowser and get an error like this:
+
+
+.. image:: _images/15_unable_to_connect.png
+
+
+then all you have to do is to remove the  https:// in the addressbar:
+
+
+.. image:: _images/15_disable_https.png
+
+
+
+
+
 Movie plays, but stutters
 *************************
 => Check if it is really a h.264 compressed movie.

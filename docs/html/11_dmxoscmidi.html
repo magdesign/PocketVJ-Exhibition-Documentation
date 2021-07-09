@@ -120,6 +120,8 @@
 <li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
 <li class="toctree-l1"><a class="reference internal" href="16_irremote.html">IR REMOTE LIRC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17_power.html">POWER SUPPLY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17_power.html#direct-power">DIRECT POWER</a></li>
 <li class="toctree-l1"><a class="reference internal" href="99_theend.html">END</a></li>
 </ul>
 
@@ -230,12 +232,12 @@
 <p><strong>REC Show</strong> =&gt; Record Show</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>REC Show01 will record on Universe 1-30, the others on Universe 1-20</p>
+<p>REC Show01 will record on Universe 1-14, Universe 15 is reserved for the remote. If you need to record more universes there must be made a modification, write me an email!</p>
 </div>
 </div>
 <div class="section" id="universe">
 <h2>Universe<a class="headerlink" href="#universe" title="Permalink to this headline">¶</a></h2>
-<p><strong>Change to 1</strong> =&gt; change the recorded track to Universe 1</p>
+<p><strong>Change to 1</strong> =&gt; change all recorded tracks to Universe 1 (this will be deprecated soon! its better to have a flip OLA in/out function)</p>
 </div>
 <div class="section" id="dmx-player">
 <h2>DMX PLAYER<a class="headerlink" href="#dmx-player" title="Permalink to this headline">¶</a></h2>
@@ -243,8 +245,10 @@
 <p><strong>Set Delay</strong> =&gt;  Set the entered delay time</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The delay will be used for all recorded shows the same, if you need them seperate, write me an email</p>
-<p>ArtNet playback is limited to 4 Universes by firmware</p>
+<p>The delay will be used for all recorded shows the same, if you need them separate, write me an email</p>
+<p>ArtNet playback is limited to 4 Universes by firmware and can not be extended.</p>
+<p><strong>If ArtNet somehow does not playback</strong> on your hardware, it might be that your hardware only supports ArtNet v1 and don’t respond to ArtPoll messages.
+Enable <code class="docutils literal notranslate"><span class="pre">always_broadcast</span> <span class="pre">=</span> <span class="pre">true</span></code> on <code class="docutils literal notranslate"><span class="pre">/var/lib/ola/conf/ola-artnet.conf</span></code></p>
 </div>
 <p><strong>Show01</strong> =&gt; Plays DMX Show01</p>
 <p><strong>Show01/01_Audio</strong> =&gt; Plays DMX Show01 together with 01_audio.mp3</p>

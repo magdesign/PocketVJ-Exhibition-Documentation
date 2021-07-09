@@ -107,6 +107,7 @@
 <li class="toctree-l1"><a class="reference internal" href="13_networksettings.html">NETWORK SETTINGS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">TROUBLESHOOTING</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#not-able-to-connect-cp-via-browser">Not able to connect CP via browser</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#movie-plays-but-stutters">Movie plays, but stutters</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#i-dont-get-an-ip-address-from-the-pocketvj">I dont get an IP address from the PocketVJ</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#movie-is-not-playing">Movie is not playing</a></li>
@@ -186,6 +187,17 @@
 <span id="id1"></span><h1>TROUBLESHOOTING<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h1>
 <p><strong>Get help online:</strong> <a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-exh/issues">https://github.com/magdesign/PocketVJ-CP-exh/issues</a></p>
 <p>There will always be a solution :-)</p>
+<div class="section" id="not-able-to-connect-cp-via-browser">
+<h2>Not able to connect CP via browser<a class="headerlink" href="#not-able-to-connect-cp-via-browser" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Some browsers force a <a class="reference external" href="https://">https://</a> connection, which is not possible on PocketVJ and will cause trouble to not be able to connect.</p>
+</div>
+<p>If you try to connect the CP via webbrowser and get an error like this:</p>
+<img alt="_images/15_unable_to_connect.png" src="_images/15_unable_to_connect.png" />
+<p>then all you have to do is to remove the  <a class="reference external" href="https://">https://</a> in the addressbar:</p>
+<img alt="_images/15_disable_https.png" src="_images/15_disable_https.png" />
+</div>
 <div class="section" id="movie-plays-but-stutters">
 <h2>Movie plays, but stutters<a class="headerlink" href="#movie-plays-but-stutters" title="Permalink to this headline">¶</a></h2>
 <p>=&gt; Check if it is really a h.264 compressed movie.</p>
@@ -263,7 +275,7 @@ Also after plugging in some USB sticks. If there are many wireless devices in th
   <div role="contentinfo">
     <p>
         
-        🄯 Copyleft 2021, M.A.Gasser, https://pocketvj.com
+        &copy; Copyright 2021, M.A.Gasser, https://pocketvj.com
 
     </p>
   </div>

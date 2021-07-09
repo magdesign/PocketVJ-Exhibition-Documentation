@@ -5,7 +5,7 @@ PocketVJ Exhibition User Manual
 .. image:: _images/00_PocketVJ_Exhibition.jpg
 
 
-Version 03/2021
+Version 05/2021
 
 This user manual is published by magdesign without any warranty.
 
@@ -47,6 +47,7 @@ Content
    14_systemsettings
    15_troubleshooting
    16_irremote
+   17_power
    99_theend
 
 

@@ -78,13 +78,13 @@ DMX RECORDER
 **REC Show** => Record Show
 
 .. note::
-    REC Show01 will record on Universe 1-30, the others on Universe 1-20
+    REC Show01 will record on Universe 1-14, Universe 15 is reserved for the remote. If you need to record more universes there must be made a modification, write me an email!
 
 
 Universe
 *********
 
-**Change to 1** => change the recorded track to Universe 1
+**Change to 1** => change all recorded tracks to Universe 1 (this will be deprecated soon! its better to have a flip OLA in/out function)
 
 
 DMX PLAYER
@@ -96,9 +96,12 @@ DMX PLAYER
 **Set Delay** =>  Set the entered delay time
 
 .. note::
-    The delay will be used for all recorded shows the same, if you need them seperate, write me an email
+    The delay will be used for all recorded shows the same, if you need them separate, write me an email
 
-    ArtNet playback is limited to 4 Universes by firmware
+    ArtNet playback is limited to 4 Universes by firmware and can not be extended.
+
+    **If ArtNet somehow does not playback** on your hardware, it might be that your hardware only supports ArtNet v1 and don't respond to ArtPoll messages.
+    Enable ``always_broadcast = true`` on ``/var/lib/ola/conf/ola-artnet.conf``
 
 
 **Show01** => Plays DMX Show01

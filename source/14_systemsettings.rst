@@ -76,8 +76,12 @@ Access the terminal, used for remote support via chat
 
 
 
-ALPHA STUFF
-***********
+RESSOURCE SAVING
+*****************
 
-Do not touch!
+All this features save some ram and some cpu if disabled:
 
+
+If you do not need Infrared Remote control, you can safely disable LIRC.
+If you do not need Samba access, you can safely disable Samba.
+If you do not need Shellinabox (access to Terminal via Webbrowser), you can safely disable.
