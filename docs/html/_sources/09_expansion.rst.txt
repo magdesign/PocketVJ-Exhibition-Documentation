@@ -13,6 +13,8 @@ This section holds all functions for the expansion board:
 
 PIR SENSOR
 **********
+see video tutorial: https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor
+
 
 With the PIR Sensor attached, you can create an interactive installation which triggers a random video as soon as the sensor detects motion.
 
@@ -21,7 +23,6 @@ With the PIR Sensor attached, you can create an interactive installation which t
     - Copy the trigger videos (can by any amount) to the media/internal/pir/trigger folder
 
 
-see video tutorial: https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor
 
 
 SENSITIVITY
@@ -102,13 +103,19 @@ Attached a DHT11 Temperature/Humidity Sensor as shown in the diagram.
 
 BEACONS
 *******
+See video tutorial: https://video.pocketvj.com/AVideo/videoEmbed/46/bluetooth-beacon-support
+
 .. image:: _images/09_CP_beacon.png
+
+
 
 .. note::
     Make sure Bluetooth is installed on your PocketVJ Exhibtion before using this function.
 
     A Eddystone beacon UID looks like this: *4927cc84cab307e6952f*
     and not longer!
+
+    Do not add the same beacon UID more than once.
 
 
 **Start** => Starts the beacon listener.
@@ -120,8 +127,28 @@ BEACONS
 
 **Beacon Info** => Display which beacon names you are listening to.
 
-**Beacon1, Beacon2, Beacon3** =>> Set the desired function to trigger.
+**Beacon1, Beacon2, Beacon3, Beacon4** =>> Set the desired function to trigger.
 
 .. note::
+    1. Stop all
+    2. Enter the beacon UID
+    3. Select the function it shall trigger
+    4. Start the beaconlistener
+
     Currently it will trigger one of the functions and then waits for 60seconds before looking again for beacons, if a beacon appears after this time, it will stop everything and trigger the function again.
     Let me know if you have a better solution/idea on how to solve this. One solution is to enter the commands directly in the python script, so it will wait until the function stops.
+
+
+    For debugging purposes you can start the script manually or run the ``sudo python3 /var/www/sync/bluetooth_scanner.py`` script within the terminal.
+
+
+EXPANSION PINS
+**************
+
+.. image:: _images/09_expansion_pins.png
+
+
+.. note::
+    MOSFET max. 10A
+
+    PWM0 + PWM1 only usable on special series cases

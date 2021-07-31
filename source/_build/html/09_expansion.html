@@ -103,6 +103,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#connect-buttons">CONNECT BUTTONS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sensors">SENSORS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#beacons">BEACONS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#expansion-pins">EXPANSION PINS</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="10_scheduler.html">SCHEDULER</a></li>
@@ -118,6 +119,8 @@
 <li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
 <li class="toctree-l1"><a class="reference internal" href="16_irremote.html">IR REMOTE LIRC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17_power.html">POWER SUPPLY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17_power.html#direct-power">DIRECT POWER</a></li>
 <li class="toctree-l1"><a class="reference internal" href="99_theend.html">END</a></li>
 </ul>
 
@@ -190,6 +193,7 @@
 <img alt="_images/09_CP_expansion.png" src="_images/09_CP_expansion.png" />
 <div class="section" id="pir-sensor">
 <h2>PIR SENSOR<a class="headerlink" href="#pir-sensor" title="Permalink to this headline">¶</a></h2>
+<p>see video tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor">https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor</a></p>
 <p>With the PIR Sensor attached, you can create an interactive installation which triggers a random video as soon as the sensor detects motion.</p>
 <blockquote>
 <div><ul class="simple">
@@ -198,7 +202,6 @@
 <li><p>Copy the trigger videos (can by any amount) to the media/internal/pir/trigger folder</p></li>
 </ul>
 </div></blockquote>
-<p>see video tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor">https://video.pocketvj.com/AVideo/video/13/pocketvj-exhibition-pir-sensor</a></p>
 </div>
 <div class="section" id="sensitivity">
 <h2>SENSITIVITY<a class="headerlink" href="#sensitivity" title="Permalink to this headline">¶</a></h2>
@@ -255,22 +258,40 @@ the sensor. Gently unscrew it with a hex key and then change the range with a sc
 </div>
 <div class="section" id="beacons">
 <h2>BEACONS<a class="headerlink" href="#beacons" title="Permalink to this headline">¶</a></h2>
+<p>See video tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/videoEmbed/46/bluetooth-beacon-support">https://video.pocketvj.com/AVideo/videoEmbed/46/bluetooth-beacon-support</a></p>
 <img alt="_images/09_CP_beacon.png" src="_images/09_CP_beacon.png" />
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Make sure Bluetooth is installed on your PocketVJ Exhibtion before using this function.</p>
 <p>A Eddystone beacon UID looks like this: <em>4927cc84cab307e6952f</em>
 and not longer!</p>
+<p>Do not add the same beacon UID more than once.</p>
 </div>
 <p><strong>Start</strong> =&gt; Starts the beacon listener.</p>
 <p><strong>Stop</strong> =&gt; Stops the beacon listener since regular stop button will not stop the beacon listener.</p>
 <p><strong>Set Beacon</strong> =&gt; Insert your Eddystone UID beacon namespace to which you want to trigger stuff.</p>
 <p><strong>Beacon Info</strong> =&gt; Display which beacon names you are listening to.</p>
-<p><strong>Beacon1, Beacon2, Beacon3</strong> =&gt;&gt; Set the desired function to trigger.</p>
+<p><strong>Beacon1, Beacon2, Beacon3, Beacon4</strong> =&gt;&gt; Set the desired function to trigger.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
+<ol class="arabic simple">
+<li><p>Stop all</p></li>
+<li><p>Enter the beacon UID</p></li>
+<li><p>Select the function it shall trigger</p></li>
+<li><p>Start the beaconlistener</p></li>
+</ol>
 <p>Currently it will trigger one of the functions and then waits for 60seconds before looking again for beacons, if a beacon appears after this time, it will stop everything and trigger the function again.
 Let me know if you have a better solution/idea on how to solve this. One solution is to enter the commands directly in the python script, so it will wait until the function stops.</p>
+<p>For debugging purposes you can start the script manually or run the <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">python3</span> <span class="pre">/var/www/sync/bluetooth_scanner.py</span></code> script within the terminal.</p>
+</div>
+</div>
+<div class="section" id="expansion-pins">
+<h2>EXPANSION PINS<a class="headerlink" href="#expansion-pins" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/09_expansion_pins.png" src="_images/09_expansion_pins.png" />
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>MOSFET max. 10A</p>
+<p>PWM0 + PWM1 only usable on special series cases</p>
 </div>
 </div>
 </div>

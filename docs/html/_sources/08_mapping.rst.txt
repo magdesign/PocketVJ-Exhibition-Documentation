@@ -1,6 +1,7 @@
 MAPPING
 ===========
 
+see video tutorial: https://video.pocketvj.com/AVideo/video/38/mapping_single_channel
 
 .. note::
 
@@ -61,6 +62,10 @@ SYNC
 
 **Receiver** => Set the mapper to be receiver
 
+.. note::
+    sync works only with one video file in mapper
+
+    no sync for slideshows
 
 
 REMOTE
@@ -75,7 +80,7 @@ FBO
 **Launch** => Launches the mapper with slideshow function (no sync or softedge in this version)
 
 .. note::
-    Images may be maximal 1920x1080 pixel, also make a dpi of 72
+    Images may be maximal 1920x1080pixel 72dpi
 
 
 
