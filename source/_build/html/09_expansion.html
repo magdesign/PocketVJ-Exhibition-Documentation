@@ -280,9 +280,8 @@ and not longer!</p>
 <li><p>Select the function it shall trigger</p></li>
 <li><p>Start the beaconlistener</p></li>
 </ol>
-<p>Currently it will trigger one of the functions and then waits for 60seconds before looking again for beacons, if a beacon appears after this time, it will stop everything and trigger the function again.
-Let me know if you have a better solution/idea on how to solve this. One solution is to enter the commands directly in the python script, so it will wait until the function stops.</p>
-<p>For debugging purposes you can start the script manually or run the <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">python3</span> <span class="pre">/var/www/sync/bluetooth_scanner.py</span></code> script within the terminal.</p>
+<p>For debugging purposes you can run  <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">python3</span> <span class="pre">/var/www/sync/bluetooth_scanner.py</span></code> script within the terminal to see all bluetooth devices around you,
+if you want to display only beacons containing a namespace: <code class="docutils literal notranslate"><span class="pre">/var/www/sync/bluetooth_scanner.py</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">&quot;namespace&quot;</span></code> and wait for 10seconds until you get the output to see if your beacon is visible.</p>
 </div>
 </div>
 <div class="section" id="expansion-pins">

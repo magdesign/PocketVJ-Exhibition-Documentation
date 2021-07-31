@@ -110,12 +110,12 @@ See video tutorial: https://video.pocketvj.com/AVideo/videoEmbed/46/bluetooth-be
 
 
 .. note::
-    Make sure Bluetooth is installed on your PocketVJ Exhibtion before using this function.
+    PocketVJ's bought before 31. March 2021 need to install Bluetooth first to use this function, see
+    Systemsettings=>Firmware=>Install Bluetooth
 
-    A Eddystone beacon UID looks like this: *4927cc84cab307e6952f*
-    and not longer!
+    An Eddystone beacon UID looks like this: *4927cc84cab307e6952f*
 
-    Do not add the same beacon UID more than once.
+    Do not add the same beacon UID more than once, otherwise its confusing what to trigger
 
 
 **Start** => Starts the beacon listener.
@@ -130,16 +130,16 @@ See video tutorial: https://video.pocketvj.com/AVideo/videoEmbed/46/bluetooth-be
 **Beacon1, Beacon2, Beacon3, Beacon4** =>> Set the desired function to trigger.
 
 .. note::
+    Quick how to setup:
+    
     1. Stop all
-    2. Enter the beacon UID
+    2. Enter your beacon UID's
     3. Select the function it shall trigger
-    4. Start the beaconlistener
+    4. Start the Beacon listener
 
-    Currently it will trigger one of the functions and then waits for 60seconds before looking again for beacons, if a beacon appears after this time, it will stop everything and trigger the function again.
-    Let me know if you have a better solution/idea on how to solve this. One solution is to enter the commands directly in the python script, so it will wait until the function stops.
-
-
-    For debugging purposes you can start the script manually or run the ``sudo python3 /var/www/sync/bluetooth_scanner.py`` script within the terminal.
+.. note::
+    For debugging purposes you can run  ``sudo python3 /var/www/sync/bluetooth_scanner.py`` script within the terminal to see all bluetooth devices around you,
+    if you want to display only beacons containing a namespace: ``/var/www/sync/bluetooth_scanner.py | grep "namespace"`` and wait for 10seconds until you get the output to see if your beacon is visible.
 
 
 EXPANSION PINS
