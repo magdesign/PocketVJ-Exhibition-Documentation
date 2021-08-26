@@ -33,7 +33,7 @@ then all you have to do is to remove the  https:// in the addressbar:
 Movie plays, but stutters
 *************************
 => Check if it is really a h.264 compressed movie.
-
+=> Go to **SYSTEM SETTINGS** click **Powersupply** and check the message.
 
 
 I dont get an IP address from the PocketVJ

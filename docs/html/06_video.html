@@ -99,6 +99,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#sync-wifi">SYNC WIFI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#multichannel">MULTICHANNEL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#multichannel-syncing">MULTICHANNEL SYNCING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fading-size-speed">FADING / SIZE / SPEED</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="07_sharing.html">SHARING</a></li>
@@ -117,6 +118,8 @@
 <li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="15_troubleshooting.html">TROUBLESHOOTING</a></li>
 <li class="toctree-l1"><a class="reference internal" href="16_irremote.html">IR REMOTE LIRC</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17_power.html">POWER SUPPLY</a></li>
+<li class="toctree-l1"><a class="reference internal" href="17_power.html#direct-power">DIRECT POWER</a></li>
 <li class="toctree-l1"><a class="reference internal" href="99_theend.html">END</a></li>
 </ul>
 
@@ -251,14 +254,15 @@ Connect all the PocketVJ’s together with an RJ45 network.</p>
 <ul class="simple">
 <li><p><strong>Receiver/Slave</strong> =&gt; This will listen to the masters timecode</p></li>
 <li><p><strong>Receiver/Slave</strong> =&gt; This will listen to the masters timecode and when played once, to be used together with <strong>BUTTONS</strong> play once</p></li>
-<li><p><strong>Stop SLaves</strong> =&gt; Sends a Stop all commend to players in the network with Ip 192.168.2.100 - 110 and 10.0.0.100 - 110</p></li>
-<li><p><strong>Set long Videos</strong> =&gt; If you are syncing very large videos this might be selected since it takes time until everything is loaded</p></li>
-<li><p><strong>Set short Videos</strong> =&gt; If you are syncing very short videos to go into sync as fast as possible</p></li>
+<li><p><strong>Stop Slaves</strong> =&gt; Sends a Stop all commend to players in the network with Ip 192.168.2.100 - 110 and 10.0.0.100 - 110</p></li>
+<li><p><strong>Set long Videos</strong> =&gt; If you are syncing very large videos this might be selected since it takes time until everything is loaded (starts syncing after 10 Seconds)</p></li>
+<li><p><strong>Set short Videos</strong> =&gt; If you are syncing very short videos to go into sync as fast as possible (at least a length of 60 Seconds)</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul class="simple">
 <li><p>Syncing several players might take up to 10 Seconds, make a video with a still image for the first 10 Seconds</p></li>
+<li><p>To get a good sync experience, produce videos with a lenght of 3min. or longer</p></li>
 <li><p>If you use a router, make sure to be in the same subnet</p></li>
 </ul>
 </div>
@@ -287,6 +291,17 @@ use a switch to connect more players, if you use a router, make sure its configu
 <li><p>For Syncing with high bitrates (1080p with 12 MB/s or more) you may set the SYNC_OFFSET to a higher value.</p></li>
 </ul>
 </div>
+</div>
+<div class="section" id="fading-size-speed">
+<h2>FADING / SIZE / SPEED<a class="headerlink" href="#fading-size-speed" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/06_CP_video_fading.png" src="_images/06_CP_video_fading.png" />
+<p>This are some experimental features. Tell me if you like it and what you do with it.</p>
+<p>The idea is to create some kind of VJ engine where you can scale and move movies with sliders or Midi or DMX/ArtNet ;-)</p>
+<p><strong>DMX/ArtNet</strong> is already possible, see <a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-exh/blob/master/sync/artnet.conf">https://github.com/magdesign/PocketVJ-CP-exh/blob/master/sync/artnet.conf</a> .
+<strong>slot 5</strong></p>
+<p>It is also possible to use more than one video at a time, which makes it interesting for VJ’s or theaters with a modern backdrop.</p>
+<p>This is possible with sending the layer when starting omxplayer:  <code class="docutils literal notranslate"><span class="pre">/usr/bin/omxplayer</span> <span class="pre">--layer</span> <span class="pre">n</span> <span class="pre">/path/to/video.mp4</span></code></p>
+<p>While <code class="docutils literal notranslate"><span class="pre">n</span></code> is the layer, you can even put one behind with <code class="docutils literal notranslate"><span class="pre">--layer</span> <span class="pre">-1</span></code></p>
 </div>
 </div>
 

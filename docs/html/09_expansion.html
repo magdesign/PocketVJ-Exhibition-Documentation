@@ -265,6 +265,8 @@ the sensor. Gently unscrew it with a hex key and then change the range with a sc
 <p>PocketVJ’s bought before 31. March 2021 need to install Bluetooth first to use this function, see
 Systemsettings=&gt;Firmware=&gt;Install Bluetooth</p>
 <p>An Eddystone beacon UID looks like this: <em>4927cc84cab307e6952f</em></p>
+<p>If you simulate a beacon with e.g. PyBeacon like: <code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">PyBeacon</span> <span class="pre">-i</span> <span class="pre">4927cc84cab307e6952f5dadf7f8468c</span></code>
+the resulting namespace to enter in PocketVJ would be: <code class="docutils literal notranslate"><span class="pre">4927cc84cab307e6952f</span></code></p>
 <p>Do not add the same beacon UID more than once, otherwise its confusing what to trigger</p>
 </div>
 <p><strong>Start</strong> =&gt; Starts the beacon listener.</p>
@@ -274,11 +276,23 @@ Systemsettings=&gt;Firmware=&gt;Install Bluetooth</p>
 <p><strong>Beacon1, Beacon2, Beacon3, Beacon4</strong> =&gt;&gt; Set the desired function to trigger.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Quick how to setup:
-1. Stop all
-2. Enter your beacon UID’s
-3. Select the function it shall trigger
-4. Start the Beacon listener</p>
+<p>Quick how to setup:</p>
+<ol class="arabic simple">
+<li><p>Stop all</p></li>
+<li><p>Enter your beacon UID’s</p></li>
+<li><p>Select the function it shall trigger</p></li>
+<li><p>Start the Beacon listener</p></li>
+</ol>
+<p>make sure you did not =&gt; WIFI ANTENNA =&gt; OFF Permanent  since this will also disable the Bluetooth chip !!!</p>
+</div>
+<p><strong>DELAY</strong></p>
+<p><strong>Disable Delay</strong> is the default value, after triggering an action with a beacon, we wait until the action is finished.</p>
+<p><strong>Enable Delay</strong> will wait for Delay in Seconds until it starts scanning again and if it found any beacon, it will stop the current action and trigger the new one.</p>
+<p><strong>Set Delay</strong> enter a number (Seconds) and click Set Delay to set the above mentioned delay.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You are able to set a delay time for the audio to trigger, so you can reach a sync, for this see the
+<cite>DMX PLAYER</cite> section of this manual and also watch the dmx video tutorial.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>

@@ -40,7 +40,10 @@ Rotate or flip the output => Needs reboot
 SLEEP
 ******
 
-Set the display to sleep or wakeup
+Set the display/gpu to sleep or wakeup. 
+
+.. note::
+    This also disables the GPU which extremely helps to save energy.
 
 
 
@@ -55,6 +58,7 @@ PROJECTOR
     - Default ip is: 192.168.2.254
     - For custom ip's make sure to stay in the same range as the PocketVJ's rj45 ip
     - Disable password and powersettings on projector
+    - Some projectors act weird, this is not my fault, before complaining check if you are able to power them off (off, not on!!) from CP
     - When coming from a CP older than 4.0.3, make sure to hit "Factory Reset" to change to the new projector control system
 
 .. image:: _images/12_CP_projector.png

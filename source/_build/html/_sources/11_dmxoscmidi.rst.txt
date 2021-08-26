@@ -100,8 +100,7 @@ DMX PLAYER
 
     ArtNet playback is limited to 4 Universes by firmware and can not be extended.
 
-    **If ArtNet somehow does not playback** on your hardware, it might be that your hardware only supports ArtNet v1 and don't respond to ArtPoll messages.
-    Enable ``always_broadcast = true`` on ``/var/lib/ola/conf/ola-artnet.conf``
+    **If ArtNet somehow does not playback** on your hardware, make a factory reset on the PocketVJ, this might fix some issues.
 
 
 **Show01** => Plays DMX Show01
@@ -134,23 +133,35 @@ List of OSC commands: https://github.com/magdesign/PocketVJ-CP-exh/blob/master/s
 
 
 **Download TouchOSC** => Download the TouchOSC layout contributed by Cornelius Henke:
-https://github.com/magdesign/PocketVJ-CP-v3/raw/master/sync/PocketVJ_OSC.touchosc 
+https://github.com/magdesign/PocketVJ-CP-exh/raw/master/sync/PocketVJ_OSC.touchosc 
 
 
 .. image:: _images/11_osc_app.png
       :width: 300
 
 
+To send OSC from your computer, you can use https://hexler.net/touchosc
+
+.. image:: _images/11_osc_sending.png
 
 
-To send OSC commands under Debian Linux 
-(sudo apt install liblo-tools):
+
+There are many tools on the market which can send OSC commands.
+For example OSCulator or QLAB.
+
+.. note::
+    Make sure you are not blocked by a firewall if the command does not get through to the player!
+
+
+To send OSC commands under Debian Linux from terminal(sudo apt install liblo-tools):
 
 ``oscsend 192.168.2.100 9876 /pause``
 
-or sendosc for all platformas: https://github.com/yoggy/sendosc
+or sendosc for all platforms: https://github.com/yoggy/sendosc
 
 ``sendosc 2.0.10.102 9876 /testscreen``
+
+
 
 
 MIDI

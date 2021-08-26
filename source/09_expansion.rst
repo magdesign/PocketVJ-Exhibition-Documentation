@@ -115,6 +115,10 @@ See video tutorial: https://video.pocketvj.com/AVideo/videoEmbed/46/bluetooth-be
 
     An Eddystone beacon UID looks like this: *4927cc84cab307e6952f*
 
+    If you simulate a beacon with e.g. PyBeacon like: ``sudo PyBeacon -i 4927cc84cab307e6952f5dadf7f8468c``
+    the resulting namespace to enter in PocketVJ would be: ``4927cc84cab307e6952f``
+
+
     Do not add the same beacon UID more than once, otherwise its confusing what to trigger
 
 
@@ -137,9 +141,28 @@ See video tutorial: https://video.pocketvj.com/AVideo/videoEmbed/46/bluetooth-be
     3. Select the function it shall trigger
     4. Start the Beacon listener
 
+    make sure you did not => WIFI ANTENNA => OFF Permanent  since this will also disable the Bluetooth chip !!!
+
+**DELAY**
+
+**Disable Delay** is the default value, after triggering an action with a beacon, we wait until the action is finished.
+
+**Enable Delay** will wait for Delay in Seconds until it starts scanning again and if it found any beacon, it will stop the current action and trigger the new one.
+
+**Set Delay** enter a number (Seconds) and click Set Delay to set the above mentioned delay.
+
+
+.. note:: 
+    You are able to set a delay time for the audio to trigger, so you can reach a sync, for this see the 
+    `DMX PLAYER` section of this manual and also watch the dmx video tutorial.
+    
+
+
+   
 .. note::
     For debugging purposes you can run  ``sudo python3 /var/www/sync/bluetooth_scanner.py`` script within the terminal to see all bluetooth devices around you,
     if you want to display only beacons containing a namespace: ``/var/www/sync/bluetooth_scanner.py | grep "namespace"`` and wait for 10seconds until you get the output to see if your beacon is visible.
+
 
 
 EXPANSION PINS

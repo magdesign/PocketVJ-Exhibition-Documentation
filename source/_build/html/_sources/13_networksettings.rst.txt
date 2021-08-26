@@ -33,9 +33,10 @@ https://video.pocketvj.com/AVideo/video/3/pocketvj-exhibition-access-from-everyw
 CP PASSWORD
 ***********
 
-Used to lock the Control Panel with a password.
+Used to lock the Control Panel and the content with a password.
 
 Username: ``admin``
+Pass: ``12345``
 
 **Enable** => Enables the CP password
 
@@ -43,6 +44,7 @@ Username: ``admin``
 
 **Entry Filed** => Set your own password
 
+.. image:: _images/13_CP_password.png
 
 
 
@@ -64,13 +66,23 @@ WIFI ANTENNA
 
 Enable or disable the internal wifi
 
-Change Wifi channels, useful when using multiple PocketVJ's in public spaces to split up the frequencies.
 
 .. image:: _images/13_CP_wifiantenna.png
 
 
+**ON** => Turns wifi on
+
+**ON Permanent** => Turns wifi on also after reboot
+
+**OFF** => Turns wifi and bluetooth off until next reboot
+
+**OFF Permanent** => Turns wifi and bluetooth off  forever
 
 
+WIFI CHANNEL
+************
+
+Change Wifi channels, useful when using multiple PocketVJ's in public spaces to split up the frequencies.
 
 
 UDP Control

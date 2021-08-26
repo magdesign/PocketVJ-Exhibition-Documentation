@@ -76,12 +76,13 @@ Connect all the PocketVJ's together with an RJ45 network.
 
 - **Receiver/Slave** => This will listen to the masters timecode
 - **Receiver/Slave** => This will listen to the masters timecode and when played once, to be used together with **BUTTONS** play once
-- **Stop SLaves** => Sends a Stop all commend to players in the network with Ip 192.168.2.100 - 110 and 10.0.0.100 - 110
-- **Set long Videos** => If you are syncing very large videos this might be selected since it takes time until everything is loaded
-- **Set short Videos** => If you are syncing very short videos to go into sync as fast as possible
+- **Stop Slaves** => Sends a Stop all commend to players in the network with Ip 192.168.2.100 - 110 and 10.0.0.100 - 110
+- **Set long Videos** => If you are syncing very large videos this might be selected since it takes time until everything is loaded (starts syncing after 10 Seconds)
+- **Set short Videos** => If you are syncing very short videos to go into sync as fast as possible (at least a length of 60 Seconds)
 
 .. note::
     - Syncing several players might take up to 10 Seconds, make a video with a still image for the first 10 Seconds
+    - To get a good sync experience, produce videos with a lenght of 3min. or longer
     - If you use a router, make sure to be in the same subnet
 
 
@@ -118,3 +119,22 @@ use a switch to connect more players, if you use a router, make sure its configu
     - Make sure your files are at least 60s in duration to increase the stability of seamless looping.
     - For Syncing with high bitrates (1080p with 12 MB/s or more) you may set the SYNC_OFFSET to a higher value.
 
+
+FADING / SIZE / SPEED
+*********************
+
+This are some experimental features. Tell me if you like it and what you do with it.
+
+The idea is to create some kind of VJ engine where you can scale and move movies with sliders or Midi or DMX/ArtNet ;-)
+
+**DMX/ArtNet** is already possible, see https://github.com/magdesign/PocketVJ-CP-exh/blob/master/sync/artnet.conf .
+**slot 5**
+
+It is also possible to use more than one video at a time, which makes it interesting for VJ's or theaters with a modern backdrop.
+
+This is possible with sending the layer when starting omxplayer:  ``/usr/bin/omxplayer --layer n /path/to/video.mp4``
+
+While n is the layer, you can ifen put one behind with ``--layer -1``
+
+
+    .. image:: _images/06_CP_video_fading.png

@@ -96,14 +96,46 @@ Very useful if you want to use PocketVJ as a second screen for VJ applications s
 CAMERA USB
 **********
 
-**Webcam ON** => Enables Webcam
-**Show** => Display output of Webcam
+.. image:: _images/07_CP_sharing_usbcamera.png
 
-See tutorial: ask for a tutorial via email :-)
+**Show on Screen** => Shows image of connected webcam on screen.
+
+**Show on Screen HSV** => Shows image of connected webcam on screen with a color effect.
+
+**Gender on Screen** => Shows camera image of connected USB webcam and tries to classify male/female (attention, this uses a lot of CPU and might overheat your unit!)
+.. note::
+    
+    This takes quite a while until its displayed on your connected screen, just give it some time.
+    
+    The code is not finished yet, it should act as a trigger and not to display the image.
+    
+    If you are motivated please contribute your code additions. 
+    
+    Reboot after using this feature, its not stopped correctly yet!
+
+
+
+.. image:: _images/07_CP_gender_on_screen.png
+
+**Webcam ON** => Enables Webcam.
+
+**Webcam OFF** => Disables Webcam.
+
+**Show :8081** => Display output of Webcam in your browser, this is useful for some kind of security feature over the network (give it a few seconds to refresh!!) (e.g. when you want to check if someone is looking at your artpiece or not).
+
+.. image:: _images/07_CP_webcamoutput.png
+
+
+.. note::
+    Just connect any generic USB camera and reboot to use above mentioned features:
+
+.. image:: _images/07_CP_generic_usbcam.png
+
 
 
 piCAMERA
 ********
+Things if you connect a piCam, this will be deprecated in future since there is not enough space to mount such a cam.
 
 **Enable** => Enables a connected picam
 

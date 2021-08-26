@@ -105,6 +105,10 @@ See tutorial: https://video.pocketvj.com/AVideo/video/19/pocketvj_usb_connecting
 
 SAMBA
 ******
+If you never used samba, its great to disable this service, 
+this will free up some cpu. 
+
+If you need it, turn it on and do following:
 
 See tutorial: https://video.pocketvj.com/AVideo/video/32/pocketvj_samba_share
 

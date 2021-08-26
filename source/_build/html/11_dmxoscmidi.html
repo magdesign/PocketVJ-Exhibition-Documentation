@@ -247,8 +247,7 @@
 <p class="admonition-title">Note</p>
 <p>The delay will be used for all recorded shows the same, if you need them separate, write me an email</p>
 <p>ArtNet playback is limited to 4 Universes by firmware and can not be extended.</p>
-<p><strong>If ArtNet somehow does not playback</strong> on your hardware, it might be that your hardware only supports ArtNet v1 and don’t respond to ArtPoll messages.
-Enable <code class="docutils literal notranslate"><span class="pre">always_broadcast</span> <span class="pre">=</span> <span class="pre">true</span></code> on <code class="docutils literal notranslate"><span class="pre">/var/lib/ola/conf/ola-artnet.conf</span></code></p>
+<p><strong>If ArtNet somehow does not playback</strong> on your hardware, make a factory reset on the PocketVJ, this might fix some issues.</p>
 </div>
 <p><strong>Show01</strong> =&gt; Plays DMX Show01</p>
 <p><strong>Show01/01_Audio</strong> =&gt; Plays DMX Show01 together with 01_audio.mp3</p>
@@ -266,12 +265,19 @@ Enable <code class="docutils literal notranslate"><span class="pre">always_broad
 <p><strong>Start Listen</strong> =&gt; Starts to listen for OSC commands on port <code class="docutils literal notranslate"><span class="pre">9876</span></code></p>
 <p>List of OSC commands: <a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-exh/blob/master/sync/osc_control.js">https://github.com/magdesign/PocketVJ-CP-exh/blob/master/sync/osc_control.js</a></p>
 <p><strong>Download TouchOSC</strong> =&gt; Download the TouchOSC layout contributed by Cornelius Henke:
-<a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-v3/raw/master/sync/PocketVJ_OSC.touchosc">https://github.com/magdesign/PocketVJ-CP-v3/raw/master/sync/PocketVJ_OSC.touchosc</a></p>
+<a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-exh/raw/master/sync/PocketVJ_OSC.touchosc">https://github.com/magdesign/PocketVJ-CP-exh/raw/master/sync/PocketVJ_OSC.touchosc</a></p>
 <a class="reference internal image-reference" href="_images/11_osc_app.png"><img alt="_images/11_osc_app.png" src="_images/11_osc_app.png" style="width: 300px;" /></a>
-<p>To send OSC commands under Debian Linux
-(sudo apt install liblo-tools):</p>
+<p>To send OSC from your computer, you can use <a class="reference external" href="https://hexler.net/touchosc">https://hexler.net/touchosc</a></p>
+<img alt="_images/11_osc_sending.png" src="_images/11_osc_sending.png" />
+<p>There are many tools on the market which can send OSC commands.
+For example OSCulator or QLAB.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Make sure you are not blocked by a firewall if the command does not get through to the player!</p>
+</div>
+<p>To send OSC commands under Debian Linux from terminal(sudo apt install liblo-tools):</p>
 <p><code class="docutils literal notranslate"><span class="pre">oscsend</span> <span class="pre">192.168.2.100</span> <span class="pre">9876</span> <span class="pre">/pause</span></code></p>
-<p>or sendosc for all platformas: <a class="reference external" href="https://github.com/yoggy/sendosc">https://github.com/yoggy/sendosc</a></p>
+<p>or sendosc for all platforms: <a class="reference external" href="https://github.com/yoggy/sendosc">https://github.com/yoggy/sendosc</a></p>
 <p><code class="docutils literal notranslate"><span class="pre">sendosc</span> <span class="pre">2.0.10.102</span> <span class="pre">9876</span> <span class="pre">/testscreen</span></code></p>
 </div>
 <div class="section" id="midi">
