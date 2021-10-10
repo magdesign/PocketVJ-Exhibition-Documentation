@@ -99,6 +99,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#sync-wifi">SYNC WIFI</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#multichannel">MULTICHANNEL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#multichannel-syncing">MULTICHANNEL SYNCING</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#slideshow-after">SLIDESHOW after</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#fading-size-speed">FADING / SIZE / SPEED</a></li>
 </ul>
 </li>
@@ -120,6 +121,7 @@
 <li class="toctree-l1"><a class="reference internal" href="16_irremote.html">IR REMOTE LIRC</a></li>
 <li class="toctree-l1"><a class="reference internal" href="17_power.html">POWER SUPPLY</a></li>
 <li class="toctree-l1"><a class="reference internal" href="17_power.html#direct-power">DIRECT POWER</a></li>
+<li class="toctree-l1"><a class="reference internal" href="18_content_creation.html">CREATE CONTENT</a></li>
 <li class="toctree-l1"><a class="reference internal" href="99_theend.html">END</a></li>
 </ul>
 
@@ -229,6 +231,7 @@
 <li><p>To be able to sync, the file names on master and slave must be exactly the same!</p></li>
 </ul>
 </div>
+<img alt="_images/06_CP_video_sync.png" src="_images/06_CP_video_sync.png" />
 </div>
 <div class="section" id="sync-wifi">
 <h2>SYNC WIFI<a class="headerlink" href="#sync-wifi" title="Permalink to this headline">¶</a></h2>
@@ -292,18 +295,31 @@ use a switch to connect more players, if you use a router, make sure its configu
 </ul>
 </div>
 </div>
+<div class="section" id="slideshow-after">
+<h2>SLIDESHOW after<a class="headerlink" href="#slideshow-after" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/06_CP_slideafter.png" src="_images/06_CP_slideafter.png" />
+<p>If you play a video Once 0x _* and want that afterwards a slideshow is starting.</p>
+<p><strong>Enable</strong></p>
+<p>Enables slideshow</p>
+<p><strong>Disable</strong></p>
+<p>Disables slideshow</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To stop you need push STOP 2x, first will stop video, second stops imageplayer.</p>
+<p>Set the slideshow time in the green PRESENTER section.</p>
+<p>If you only want one slide to display, just add one slide to the images folder.</p>
+</div>
+</div>
 <div class="section" id="fading-size-speed">
 <h2>FADING / SIZE / SPEED<a class="headerlink" href="#fading-size-speed" title="Permalink to this headline">¶</a></h2>
+<img alt="_images/06_CP_video_fading.png" src="_images/06_CP_video_fading.png" />
 <p>This are some experimental features. Tell me if you like it and what you do with it.</p>
 <p>The idea is to create some kind of VJ engine where you can scale and move movies with sliders or Midi or DMX/ArtNet ;-)</p>
 <p><strong>DMX/ArtNet</strong> is already possible, see <a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-exh/blob/master/sync/artnet.conf">https://github.com/magdesign/PocketVJ-CP-exh/blob/master/sync/artnet.conf</a> .
 <strong>slot 5</strong></p>
 <p>It is also possible to use more than one video at a time, which makes it interesting for VJ’s or theaters with a modern backdrop.</p>
 <p>This is possible with sending the layer when starting omxplayer:  <code class="docutils literal notranslate"><span class="pre">/usr/bin/omxplayer</span> <span class="pre">--layer</span> <span class="pre">n</span> <span class="pre">/path/to/video.mp4</span></code></p>
-<p>While n is the layer, you can ifen put one behind with <code class="docutils literal notranslate"><span class="pre">--layer</span> <span class="pre">-1</span></code></p>
-<blockquote>
-<div><img alt="_images/06_CP_video_fading.png" src="_images/06_CP_video_fading.png" />
-</div></blockquote>
+<p>While <code class="docutils literal notranslate"><span class="pre">n</span></code> is the layer, you can even put one behind with <code class="docutils literal notranslate"><span class="pre">--layer</span> <span class="pre">-1</span></code></p>
 </div>
 </div>
 

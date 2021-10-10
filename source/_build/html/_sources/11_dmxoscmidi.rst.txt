@@ -8,8 +8,16 @@ see video tutorial for recording/playback: https://video.pocketvj.com/AVideo/vid
 
 see video tutorial for remote controlling: https://video.pocketvj.com/AVideo/video/14/pocketvj-exhibition-artnet-dmx-remote-control
 
+.. note:: 
+    Art-Net is able to drive up to 4 universes.
 
+    The other protocols (DMX, sACN...) are nearly unlimited.
 
+    Keep in mind not to address universe 15, since this universe is reserved for remote controlling the PocketVJ and is excluded for 
+    example from dmxblackout or dmx recording functions.
+
+  
+ 
 OLA
 *****
 

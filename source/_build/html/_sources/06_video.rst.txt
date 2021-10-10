@@ -43,7 +43,8 @@ PLAYER SYNC ONCE
 .. note::
     - To be able to sync, the file names on master and slave must be exactly the same!
 
-   
+
+.. image:: _images/06_CP_video_sync.png
 
 SYNC WIFI
 *********
@@ -120,8 +121,37 @@ use a switch to connect more players, if you use a router, make sure its configu
     - For Syncing with high bitrates (1080p with 12 MB/s or more) you may set the SYNC_OFFSET to a higher value.
 
 
+
+SLIDESHOW after
+***************
+
+.. image:: _images/06_CP_slideafter.png
+
+
+If you play a video Once 0x _* and want that afterwards a slideshow is starting.
+
+**Enable**
+
+Enables slideshow
+
+**Disable**
+
+Disables slideshow
+
+
+.. note::
+    To stop you need push STOP 2x, first will stop video, second stops imageplayer.
+
+    Set the slideshow time in the green PRESENTER section.
+
+    If you only want one slide to display, just add one slide to the images folder.
+
+
+
 FADING / SIZE / SPEED
 *********************
+
+.. image:: _images/06_CP_video_fading.png
 
 This are some experimental features. Tell me if you like it and what you do with it.
 
@@ -134,7 +164,6 @@ It is also possible to use more than one video at a time, which makes it interes
 
 This is possible with sending the layer when starting omxplayer:  ``/usr/bin/omxplayer --layer n /path/to/video.mp4``
 
-While n is the layer, you can ifen put one behind with ``--layer -1``
+While ``n`` is the layer, you can even put one behind with ``--layer -1``
 
 
-    .. image:: _images/06_CP_video_fading.png
