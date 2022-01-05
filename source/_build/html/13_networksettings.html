@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>NETWORK SETTINGS &mdash; PocketVJ Exhibition 4.x documentation</title>
   
@@ -16,7 +16,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -29,7 +32,6 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -51,7 +53,7 @@
           
 
           
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> PocketVJ Exhibition
+            <a href="index.html" class="icon icon-home"> PocketVJ Exhibition
           
 
           
@@ -113,7 +115,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#wifi-antenna">WIFI ANTENNA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#wifi-channel">WIFI CHANNEL</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#udp-control">UDP Control</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#tcp-control">TCP Control</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="14_systemsettings.html">SYSTEM SETTINGS</a></li>
@@ -163,6 +164,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -174,7 +177,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/13_networksettings.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -199,10 +202,6 @@
 <p><strong>192.168.2.</strong> =&gt; Sets the ip range to <code class="docutils literal notranslate"><span class="pre">192.168.2.***</span></code> (reverts from dhcp)</p>
 <p><strong>10.0.0.0.</strong> =&gt; Set the ip range to <code class="docutils literal notranslate"><span class="pre">10.0.0.0.***</span></code> (reverts from dhcp)</p>
 <p><strong>RJ45 DHCP</strong> =&gt; Sets the rj45 connection to dhcp to get the ip address from a router</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The Wifi IP will always stay the same!</p>
-</div>
 </div>
 <div class="section" id="remote-access">
 <h2>REMOTE ACCESS<a class="headerlink" href="#remote-access" title="Permalink to this headline">¶</a></h2>
@@ -224,6 +223,12 @@ Pass: <code class="docutils literal notranslate"><span class="pre">12345</span><
 <p>Used to connect to an in house Wifi with internet so you can accesss from anywhere.</p>
 <img alt="_images/13_CP_connectwifi.png" src="_images/13_CP_connectwifi.png" />
 <p>see video tutorial: <a class="reference external" href="https://video.pocketvj.com/AVideo/video/11/pocketvj-exhibition-wifi-connecting">https://video.pocketvj.com/AVideo/video/11/pocketvj-exhibition-wifi-connecting</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When connecting to your in-house wifi, there will be no longer a “vj100” hotspot available, so you must make sure to have internet and beeing able to
+remote connect to the device, otherwhise you will lock yourself out!</p>
+<p>After remote accessing with the given ip address shipped with your unit, you can go to “Network Settings” and check the units Wifi IP to access it again directly within your network.</p>
+</div>
 </div>
 <div class="section" id="wifi-antenna">
 <h2>WIFI ANTENNA<a class="headerlink" href="#wifi-antenna" title="Permalink to this headline">¶</a></h2>
@@ -248,13 +253,7 @@ Pass: <code class="docutils literal notranslate"><span class="pre">12345</span><
 <img alt="_images/13_udp_packetsender.png" src="_images/13_udp_packetsender.png" />
 <p>The commands are defined in: <a class="reference external" href="https://github.com/magdesign/PocketVJ-CP-exh/blob/master/sync/commandmapping.sh">https://github.com/magdesign/PocketVJ-CP-exh/blob/master/sync/commandmapping.sh</a></p>
 <p>Ask if you need more control commands and I will add them or edit the file by yourself.</p>
-</div>
-<div class="section" id="tcp-control">
-<h2>TCP Control<a class="headerlink" href="#tcp-control" title="Permalink to this headline">¶</a></h2>
-<p>You can control the PocketVJ with TCP commands.</p>
-<p>Standard port for <a class="reference external" href="http://">http://</a> commands is port <code class="docutils literal notranslate"><span class="pre">80</span></code></p>
-<p>Its your decision which tool you use to send the commands,
-here is an example using curl via terminal to control a PocketVJ with the IP: 2.0.0.100</p>
+<p>TCP Controouse Wifi with internet so you can accesss from anywhere. example using curl via terminal to control a PocketVJ with the IP: 2.0.0.100</p>
 <p><code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-s</span> <span class="pre">http://2.0.0.100/backend.php/?action=stop</span></code></p>
 <p>IP://X.X.X:X/backend.php/?action=…………..</p>
 <p>For more commands check backend.php
@@ -267,37 +266,29 @@ Every function is controllable via TCP!</p>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="14_systemsettings.html" class="btn btn-neutral float-right" title="SYSTEM SETTINGS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="12_display.html" class="btn btn-neutral float-left" title="DISPLAY" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="14_systemsettings.html" class="btn btn-neutral float-right" title="SYSTEM SETTINGS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="12_display.html" class="btn btn-neutral float-left" title="DISPLAY" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2021, M.A.Gasser, https://pocketvj.com
+        &#169; Copyright 2021, M.A.Gasser, https://pocketvj.com.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 

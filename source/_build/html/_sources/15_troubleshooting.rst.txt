@@ -28,6 +28,38 @@ then all you have to do is to remove the  https:// in the addressbar:
 
 
 
+Not able to connect CP via browser 2
+************************************
+
+There is an edge scenario when the PocketVJ looses power while playing DMX Sequences causing the webserver (lighttpd) not to run anymore.
+To fix this, access it with ssh and do following ::
+
+ sudo mkdir /var/log/lighttpd
+ sudo chown -R www-data:www-data /var/log/lighttpd/
+ sudo service lighttpd start
+
+To check if the webserver is now running without errors ::
+    sudo service lighttpd status
+
+ 
+
+
+**Trouble connecting to Wifi Hotspot (vj100) with a Windows Computer**
+**********************************************************************
+
+If your Windows10 does not allow to connect to the PocketVJ wifi (vj100), following steps might help:
+
+
+.. image:: _images/15_windows_wifi.png
+
+
+or this one:
+
+.. image:: _images/15_windows_wifi2.png
+
+
+.
+
 
 
 Movie plays, but stutters
@@ -39,6 +71,8 @@ Movie plays, but stutters
 I dont get an IP address from the PocketVJ
 ******************************************
 => Be patient, try again.
+
+
 
 
 .. note::
@@ -81,10 +115,16 @@ Remote “Power On Projector” does not work
 
 ``DNS Server: 192.168.2.1``
 
-- check this troubleshoot video: https://vimeo.com/379009854
 - make sure the computer which is connected to the PocketVJ CP is not connected to second network, for example RJ45 in your local network and wifi to PocketVJ, if this is the case, unplug rj45 until it finds the projector, then you can plug it in again.
 - Get a list of standard passwords for projectors here: https://github.com/magdesign/PocketVJ-CP-v3/blob/master/projector_passwords.md
+- Some projectors have broken firmware and can not be remotely powered on, test with other hardware before blaming me! Once I bought 5 exact same projectors and one I was not able to remote control under any circumstance because it has broken firmware...
 
+
+**Audio quality is Bad, Audio glitches or stutters**
+*****************************************************
+
+- Make sure audio compression is not higher than 160kp/s
+- Make sure you enable only one output: e.g. audio jack or audio HDMI, not both!!
 
 
 **Special Functions**
