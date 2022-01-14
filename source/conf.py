@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'PocketVJ Exhibition'
-copyright = '2021, M.A.Gasser, https://pocketvj.com'
+copyright = '2022, M.A.Gasser, https://pocketvj.com'
 author = 'Marc-André Gasser'
 
 # The full version, including alpha/beta/rc tags
