@@ -81,4 +81,4 @@ PAINTER
 Make sure you have a mouse connected, 
 then launch the painter. With left mouse buttom pressed you paint black, with right mouse pressed you paint white.
 
-When finished painting your mask, hit "SAVE as Mask", it will be saved as mask.png everything which was white will be transparent.
+When finished painting your mask, hit "Save as Mask", it will be saved as mask.png everything which was white will be transparent.
