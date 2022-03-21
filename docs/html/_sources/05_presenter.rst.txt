@@ -50,7 +50,7 @@ OVERLAY
 
 - Create an overlay.png with transparency in the /internal/images/ folder and overlay it over the Videoplayer
 
-see video tutorial: https://video.pocketvj.com/AVideo/video/23/pocketvj-use-an-overlay
+see video tutorial: https://www.pocketvj.com/pocketvj-rtc
 
 
 
@@ -79,6 +79,13 @@ PAINTER
 .. image:: _images/05_painter.png
 
 Make sure you have a mouse connected, 
-then launch the painter. With left mouse buttom pressed you paint black, with right mouse pressed you paint white.
+then launch the painter. 
+
+With left mouse buttom pressed you paint black.
+
+With right mouse pressed you paint white.
+
+Scrolling middle mouse wheel adjusts the size of the dot.
+
 
 When finished painting your mask, hit "Save as Mask", it will be saved as mask.png everything which was white will be transparent.

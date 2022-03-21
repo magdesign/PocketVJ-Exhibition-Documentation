@@ -105,6 +105,8 @@ If your computer is powerfull enough, you could also use a screenrecorder to rec
 
 Make sure the select the right fps, when your mapping is produced in 25fps, record with 50 or 25fps.
 
+Screen recording with ffmpeg: https://trac.ffmpeg.org/wiki/Capture/Desktop
+
 **this text need to be continued with pictures, coming on request...**
 
 
@@ -127,13 +129,6 @@ the Warp tools to rebuild your setup.
 
 
 
-Using Mapio or MadMapper
-************************
-
-With the mentioned two softwares you are able to export an .svg file of your mapped quad, import this into the 
-/internal/converter/ folder of your PocketVJ and use the **Mapping Converter** to create a Mapper preset.
-https://video.pocketvj.com/AVideo/video/17/pocketvj-mapping-converter
-
 
 Never panic
 ***********
@@ -145,4 +140,7 @@ Sometime we used black tape or light baffles or even mirrors... sometime the use
 
 
 .. image:: _images/19_UVW_2k.jpg
+
+
+
 

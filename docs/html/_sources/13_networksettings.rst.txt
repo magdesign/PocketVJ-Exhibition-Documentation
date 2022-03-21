@@ -23,8 +23,7 @@ CHANGE IP
 REMOTE ACCESS
 *************
 
-see video tutorial: 
-https://video.pocketvj.com/AVideo/video/3/pocketvj-exhibition-access-from-everywhere-over-the-internet
+see video tutorial: https://www.pocketvj.com/pocketvj-exhibitiont
 
 
 
@@ -56,12 +55,14 @@ Used to connect to an in house Wifi with internet so you can accesss from anywhe
 
 .. image:: _images/13_CP_connectwifi.png
 
-see video tutorial: https://video.pocketvj.com/AVideo/video/11/pocketvj-exhibition-wifi-connecting
+see video tutorial: https://www.pocketvj.com/pocketvj-exhibition
 
 
 .. note::
     When connecting to your in-house wifi, there will be no longer a "vj100" hotspot available, so you must make sure to have internet and beeing able to
     remote connect to the device, otherwhise you will lock yourself out!
+
+    **Booting will take a bit longer, since it waits until wifi is connected!**
 
     After remote accessing with the given ip address shipped with your unit, you can go to "Network Settings" and check the units Wifi IP to access it again directly within your network.
 

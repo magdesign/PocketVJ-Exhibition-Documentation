@@ -77,8 +77,9 @@ see video tutorial: https://video.pocketvj.com/AVideo/video/25/pocketvj-pjlink-a
 If you need a pjlink password, edit:
 ``/home/pvj/.local/share/pjlink/pjlink.config`` and add a new line containing:
 ``password = yourpassword``
+to do this, access the "Terminal" and type:  ``sudo nano /home/pvj/.local/share/pjlink/pjlink.config``
 
-(Password input field coming in next CP release)
+(I can add a Password input field in CP, just ask for it...)
 
 
 PROJECTOR IR
