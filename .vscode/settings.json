@@ -1,4 +1,4 @@
 {
     "restructuredtext.confPath": "${workspaceFolder}/source",
-    "esbonio.sphinx.confDir": "/home/magdesign/Cloud/pocketVJ/docs/PVJ_manual/PocketVJ-Exhibition-Documentation/source"
+    "esbonio.sphinx.confDir": "${workspaceFolder}/source"
 }

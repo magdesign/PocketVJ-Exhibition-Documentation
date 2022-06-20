@@ -70,14 +70,16 @@ PROJECTOR
 
 
 
-see video tutorial: https://video.pocketvj.com/AVideo/video/25/pocketvj-pjlink-a-projector
+see video tutorial: https://www.pocketvj.com/pocketvj-rtc
 
 
 
 If you need a pjlink password, edit:
 ``/home/pvj/.local/share/pjlink/pjlink.config`` and add a new line containing:
 ``password = yourpassword``
+
 to do this, access the "Terminal" and type:  ``sudo nano /home/pvj/.local/share/pjlink/pjlink.config``
+when done, hit **CTRL+X** and type **Y** to save it.
 
 (I can add a Password input field in CP, just ask for it...)
 
